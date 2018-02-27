@@ -95,7 +95,7 @@ Work With Documents Action
     #Documents.Printing Documents
     #Documents.eSigning Documents
     #Documents.Reviewing Documents
-    Documents.Ready for Reviewing Documents
-
+    #Documents.Ready for Reviewing Documents
+    Documents.Copying Documents
 
 *** Keywords ***

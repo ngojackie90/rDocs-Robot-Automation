@@ -176,9 +176,16 @@ Ready for Reviewing Documents
     Sleep  1s
     Click Element  xpath=//*[@id="MainContent_UCReadyforReview_lnReadyForReview"]
 
+Copying Documents
+    Select First Documents
+    Select Dropdown Work With Documents
+    Copy Documents
+    Select From List By Value  id=MainContent_UCMoveCopy_DDLMoveFileList  12809
+    Sleep  2s
+    Click Element  id=MainContent_UCMoveCopy_btnCopy
+
 Moving Documents
 
-Copying Documents
 
 
 
