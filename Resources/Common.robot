@@ -34,3 +34,15 @@ Create Tile
 
 Back To Dashboard
     Click Element  id=//*[@id="pnlReturnToDashboard"]/div/a
+    Wait Until Page Contains  Opportunity/Transaction
+
+Add Property
+    Click Element  id=MainContent_lstFolders_ctrl0_btnAddProperty_0
+    Wait Until Element is Visible  id=MdlProperty
+    Input Text  id=MainContent_UCProperty_txtMlsNumber  OC18037224
+    #Select From List  xpath=//*[@id="MainContent_UCProperty_ddlMlsBoard"]/option[1]  Multi-Regional Multiple Listing Service
+    Click Element  id=MainContent_UCProperty_btnMlsSearch
+    Sleep  4s
+    #Wait Until Element Contains  id=MainContent_UCProperty_txtPropAddress1  1 Walnut Dr
+    #Wait Until Page Contains  1 Walnut Dr
+    Click Element  id=MainContent_UCProperty_btnSubmitProperty

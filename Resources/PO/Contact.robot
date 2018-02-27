@@ -3,7 +3,7 @@ Library  Selenium2Library
 
 *** Keywords ***
 Create Primary Buyer Client From Dashboard
-    Create Tile
+    #Create Tile
     Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_btnAddClient_0"]
     Wait Until Element Is Visible  id=MdlContact
     Click Element  id=MainContent_rdoBuyerContact

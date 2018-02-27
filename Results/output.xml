@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180226 16:29:50.321" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
+<robot generated="20180227 09:57:05.403" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
 <suite source="/Users/Work/PycharmProjects/rDocs/tests/rdocs.robot" id="s1" name="Rdocs">
-<test id="s1-t1" name="Create Contact">
+<test id="s1-t1" name="Add Property">
 <kw type="setup" name="Login to rDocs" library="Common">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -9,15 +9,15 @@
 <arg>https://abcrealty.stage.myrdocs.com</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20180226 16:29:50.441" level="INFO">Opening browser 'chrome' to base url 'https://abcrealty.stage.myrdocs.com'</msg>
-<status status="PASS" endtime="20180226 16:29:52.997" starttime="20180226 16:29:50.440"></status>
+<msg timestamp="20180227 09:57:05.518" level="INFO">Opening browser 'chrome' to base url 'https://abcrealty.stage.myrdocs.com'</msg>
+<status status="PASS" endtime="20180227 09:57:07.581" starttime="20180227 09:57:05.518"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Username</arg>
 </arguments>
-<status status="PASS" endtime="20180226 16:29:53.011" starttime="20180226 16:29:52.997"></status>
+<status status="PASS" endtime="20180227 09:57:07.596" starttime="20180227 09:57:07.581"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -25,8 +25,8 @@
 <arg>id=txtUserName</arg>
 <arg>broker.automation</arg>
 </arguments>
-<msg timestamp="20180226 16:29:53.012" level="INFO">Typing text 'broker.automation' into text field 'id=txtUserName'</msg>
-<status status="PASS" endtime="20180226 16:29:53.155" starttime="20180226 16:29:53.011"></status>
+<msg timestamp="20180227 09:57:07.596" level="INFO">Typing text 'broker.automation' into text field 'id=txtUserName'</msg>
+<status status="PASS" endtime="20180227 09:57:07.732" starttime="20180227 09:57:07.596"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -34,440 +34,95 @@
 <arg>id=txtPassword</arg>
 <arg>aaaa</arg>
 </arguments>
-<msg timestamp="20180226 16:29:53.155" level="INFO">Typing text 'aaaa' into text field 'id=txtPassword'</msg>
-<status status="PASS" endtime="20180226 16:29:53.214" starttime="20180226 16:29:53.155"></status>
+<msg timestamp="20180227 09:57:07.732" level="INFO">Typing text 'aaaa' into text field 'id=txtPassword'</msg>
+<status status="PASS" endtime="20180227 09:57:07.791" starttime="20180227 09:57:07.732"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>id=btnLogin</arg>
 </arguments>
-<msg timestamp="20180226 16:29:53.215" level="INFO">Clicking button 'id=btnLogin'.</msg>
-<status status="PASS" endtime="20180226 16:29:55.466" starttime="20180226 16:29:53.214"></status>
+<msg timestamp="20180227 09:57:07.792" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20180227 09:57:09.111" starttime="20180227 09:57:07.791"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Opportunity/Transaction</arg>
 </arguments>
-<status status="PASS" endtime="20180226 16:29:55.485" starttime="20180226 16:29:55.467"></status>
+<status status="PASS" endtime="20180227 09:57:09.129" starttime="20180227 09:57:09.111"></status>
 </kw>
-<status status="PASS" endtime="20180226 16:29:55.486" starttime="20180226 16:29:50.440"></status>
+<status status="PASS" endtime="20180227 09:57:09.129" starttime="20180227 09:57:05.518"></status>
 </kw>
-<kw name="Create Primary Buyer Client From Dashboard" library="Contact">
 <kw name="Create Tile" library="Common">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=MainContent_btnCreateNew</arg>
 </arguments>
-<msg timestamp="20180226 16:29:55.487" level="INFO">Clicking element 'id=MainContent_btnCreateNew'.</msg>
-<status status="PASS" endtime="20180226 16:29:56.432" starttime="20180226 16:29:55.487"></status>
+<msg timestamp="20180227 09:57:09.130" level="INFO">Clicking element 'id=MainContent_btnCreateNew'.</msg>
+<status status="PASS" endtime="20180227 09:57:10.118" starttime="20180227 09:57:09.130"></status>
 </kw>
-<status status="PASS" endtime="20180226 16:29:56.432" starttime="20180226 16:29:55.487"></status>
+<status status="PASS" endtime="20180227 09:57:10.118" starttime="20180227 09:57:09.130"></status>
 </kw>
+<kw name="Add Property" library="Common">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>xpath=//*[@id="MainContent_lstFolders_ctrl0_btnAddClient_0"]</arg>
+<arg>id=MainContent_lstFolders_ctrl0_btnAddProperty_0</arg>
 </arguments>
-<msg timestamp="20180226 16:29:56.433" level="INFO">Clicking element 'xpath=//*[@id="MainContent_lstFolders_ctrl0_btnAddClient_0"]'.</msg>
-<status status="PASS" endtime="20180226 16:29:56.672" starttime="20180226 16:29:56.432"></status>
+<msg timestamp="20180227 09:57:10.119" level="INFO">Clicking element 'id=MainContent_lstFolders_ctrl0_btnAddProperty_0'.</msg>
+<status status="PASS" endtime="20180227 09:57:10.387" starttime="20180227 09:57:10.119"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
-<arg>id=MdlContact</arg>
+<arg>id=MdlProperty</arg>
 </arguments>
-<status status="PASS" endtime="20180226 16:29:56.915" starttime="20180226 16:29:56.672"></status>
+<status status="PASS" endtime="20180227 09:57:10.625" starttime="20180227 09:57:10.387"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=MainContent_UCProperty_txtMlsNumber</arg>
+<arg>OC18037224</arg>
+</arguments>
+<msg timestamp="20180227 09:57:10.626" level="INFO">Typing text 'OC18037224' into text field 'id=MainContent_UCProperty_txtMlsNumber'</msg>
+<status status="PASS" endtime="20180227 09:57:10.736" starttime="20180227 09:57:10.625"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>id=MainContent_rdoBuyerContact</arg>
+<arg>id=MainContent_UCProperty_btnMlsSearch</arg>
 </arguments>
-<msg timestamp="20180226 16:29:56.916" level="INFO">Clicking element 'id=MainContent_rdoBuyerContact'.</msg>
-<status status="PASS" endtime="20180226 16:29:56.959" starttime="20180226 16:29:56.915"></status>
+<msg timestamp="20180227 09:57:10.737" level="INFO">Clicking element 'id=MainContent_UCProperty_btnMlsSearch'.</msg>
+<status status="PASS" endtime="20180227 09:57:10.807" starttime="20180227 09:57:10.737"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20180227 09:57:14.809" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20180227 09:57:14.809" starttime="20180227 09:57:10.808"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>xpath=//*[@id="MainContent_ddlContactDesc"]/option[11]</arg>
+<arg>id=MainContent_UCProperty_btnSubmitProperty</arg>
 </arguments>
-<msg timestamp="20180226 16:29:56.960" level="INFO">Clicking element 'xpath=//*[@id="MainContent_ddlContactDesc"]/option[11]'.</msg>
-<status status="PASS" endtime="20180226 16:29:56.992" starttime="20180226 16:29:56.959"></status>
+<msg timestamp="20180227 09:57:14.810" level="INFO">Clicking element 'id=MainContent_UCProperty_btnSubmitProperty'.</msg>
+<status status="PASS" endtime="20180227 09:57:14.861" starttime="20180227 09:57:14.809"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtFirstName</arg>
-<arg>Jason</arg>
-</arguments>
-<msg timestamp="20180226 16:29:56.992" level="INFO">Typing text 'Jason' into text field 'id=MainContent_txtFirstName'</msg>
-<status status="PASS" endtime="20180226 16:29:57.076" starttime="20180226 16:29:56.992"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtLastName</arg>
-<arg>Lee</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.077" level="INFO">Typing text 'Lee' into text field 'id=MainContent_txtLastName'</msg>
-<status status="PASS" endtime="20180226 16:29:57.142" starttime="20180226 16:29:57.076"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtCompanyName</arg>
-<arg>Jason Corporate</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.142" level="INFO">Typing text 'Jason Corporate' into text field 'id=MainContent_txtCompanyName'</msg>
-<status status="PASS" endtime="20180226 16:29:57.265" starttime="20180226 16:29:57.142"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtAddress1</arg>
-<arg>111 Main Street</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.266" level="INFO">Typing text '111 Main Street' into text field 'id=MainContent_txtAddress1'</msg>
-<status status="PASS" endtime="20180226 16:29:57.388" starttime="20180226 16:29:57.265"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtCity</arg>
-<arg>Irvine</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.389" level="INFO">Typing text 'Irvine' into text field 'id=MainContent_txtCity'</msg>
-<status status="PASS" endtime="20180226 16:29:57.470" starttime="20180226 16:29:57.389"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>xpath=//*[@id="MainContent_ddlState"]/option[16]</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.470" level="INFO">Clicking element 'xpath=//*[@id="MainContent_ddlState"]/option[16]'.</msg>
-<status status="PASS" endtime="20180226 16:29:57.506" starttime="20180226 16:29:57.470"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtZip</arg>
-<arg>92656</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.506" level="INFO">Typing text '92656' into text field 'id=MainContent_txtZip'</msg>
-<status status="PASS" endtime="20180226 16:29:57.582" starttime="20180226 16:29:57.506"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtEmail1</arg>
-<arg>jngoqa@gmail.com</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.582" level="INFO">Typing text 'jngoqa@gmail.com' into text field 'id=MainContent_txtEmail1'</msg>
-<status status="PASS" endtime="20180226 16:29:57.712" starttime="20180226 16:29:57.582"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtWorkPhone</arg>
-<arg>999-999-9999</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.713" level="INFO">Typing text '999-999-9999' into text field 'id=MainContent_txtWorkPhone'</msg>
-<status status="PASS" endtime="20180226 16:29:57.819" starttime="20180226 16:29:57.712"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtHomePhone</arg>
-<arg>888-888-8888</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.820" level="INFO">Typing text '888-888-8888' into text field 'id=MainContent_txtHomePhone'</msg>
-<status status="PASS" endtime="20180226 16:29:57.932" starttime="20180226 16:29:57.819"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtMobilePhone</arg>
-<arg>777-777-7777</arg>
-</arguments>
-<msg timestamp="20180226 16:29:57.932" level="INFO">Typing text '777-777-7777' into text field 'id=MainContent_txtMobilePhone'</msg>
-<status status="PASS" endtime="20180226 16:29:58.042" starttime="20180226 16:29:57.932"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtFaxNumber</arg>
-<arg>666-666-6666</arg>
-</arguments>
-<msg timestamp="20180226 16:29:58.042" level="INFO">Typing text '666-666-6666' into text field 'id=MainContent_txtFaxNumber'</msg>
-<status status="PASS" endtime="20180226 16:29:58.152" starttime="20180226 16:29:58.042"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_btnSubmitContact</arg>
-</arguments>
-<msg timestamp="20180226 16:29:58.153" level="INFO">Clicking element 'id=MainContent_btnSubmitContact'.</msg>
-<status status="PASS" endtime="20180226 16:29:58.210" starttime="20180226 16:29:58.153"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Clients (Buyer)</arg>
-</arguments>
-<status status="PASS" endtime="20180226 16:29:58.435" starttime="20180226 16:29:58.211"></status>
-</kw>
-<status status="PASS" endtime="20180226 16:29:58.435" starttime="20180226 16:29:55.486"></status>
-</kw>
-<kw name="Create Secondary Buyer Client" library="Contact">
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_btnAddContact</arg>
-</arguments>
-<msg timestamp="20180226 16:29:58.436" level="INFO">Clicking element 'id=MainContent_btnAddContact'.</msg>
-<status status="PASS" endtime="20180226 16:29:58.619" starttime="20180226 16:29:58.436"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element specified with `locator` is visible.</doc>
-<arguments>
-<arg>id=MdlContact</arg>
-</arguments>
-<status status="PASS" endtime="20180226 16:29:58.856" starttime="20180226 16:29:58.619"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>xpath=//*[@id="MainContent_ddlContactDesc"]/option[10]</arg>
-</arguments>
-<msg timestamp="20180226 16:29:58.856" level="INFO">Clicking element 'xpath=//*[@id="MainContent_ddlContactDesc"]/option[10]'.</msg>
-<status status="PASS" endtime="20180226 16:29:58.890" starttime="20180226 16:29:58.856"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtFirstName</arg>
-<arg>Karen</arg>
-</arguments>
-<msg timestamp="20180226 16:29:58.891" level="INFO">Typing text 'Karen' into text field 'id=MainContent_txtFirstName'</msg>
-<status status="PASS" endtime="20180226 16:29:58.968" starttime="20180226 16:29:58.890"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtLastName</arg>
-<arg>Lee</arg>
-</arguments>
-<msg timestamp="20180226 16:29:58.969" level="INFO">Typing text 'Lee' into text field 'id=MainContent_txtLastName'</msg>
-<status status="PASS" endtime="20180226 16:29:59.029" starttime="20180226 16:29:58.969"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtCompanyName</arg>
-<arg>Karen Corporate</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.030" level="INFO">Typing text 'Karen Corporate' into text field 'id=MainContent_txtCompanyName'</msg>
-<status status="PASS" endtime="20180226 16:29:59.152" starttime="20180226 16:29:59.030"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtAddress1</arg>
-<arg>111 Main Street</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.152" level="INFO">Typing text '111 Main Street' into text field 'id=MainContent_txtAddress1'</msg>
-<status status="PASS" endtime="20180226 16:29:59.286" starttime="20180226 16:29:59.152"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtCity</arg>
-<arg>Irvine</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.286" level="INFO">Typing text 'Irvine' into text field 'id=MainContent_txtCity'</msg>
-<status status="PASS" endtime="20180226 16:29:59.360" starttime="20180226 16:29:59.286"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>xpath=//*[@id="MainContent_ddlState"]/option[16]</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.360" level="INFO">Clicking element 'xpath=//*[@id="MainContent_ddlState"]/option[16]'.</msg>
-<status status="PASS" endtime="20180226 16:29:59.394" starttime="20180226 16:29:59.360"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtZip</arg>
-<arg>92656</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.394" level="INFO">Typing text '92656' into text field 'id=MainContent_txtZip'</msg>
-<status status="PASS" endtime="20180226 16:29:59.467" starttime="20180226 16:29:59.394"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtEmail1</arg>
-<arg>jngoqa2@gmail.com</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.468" level="INFO">Typing text 'jngoqa2@gmail.com' into text field 'id=MainContent_txtEmail1'</msg>
-<status status="PASS" endtime="20180226 16:29:59.601" starttime="20180226 16:29:59.468"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtWorkPhone</arg>
-<arg>999-999-1234</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.601" level="INFO">Typing text '999-999-1234' into text field 'id=MainContent_txtWorkPhone'</msg>
-<status status="PASS" endtime="20180226 16:29:59.709" starttime="20180226 16:29:59.601"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtHomePhone</arg>
-<arg>888-888-1234</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.710" level="INFO">Typing text '888-888-1234' into text field 'id=MainContent_txtHomePhone'</msg>
-<status status="PASS" endtime="20180226 16:29:59.820" starttime="20180226 16:29:59.710"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtMobilePhone</arg>
-<arg>777-777-1234</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.820" level="INFO">Typing text '777-777-1234' into text field 'id=MainContent_txtMobilePhone'</msg>
-<status status="PASS" endtime="20180226 16:29:59.922" starttime="20180226 16:29:59.820"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtFaxNumber</arg>
-<arg>666-666-1234</arg>
-</arguments>
-<msg timestamp="20180226 16:29:59.923" level="INFO">Typing text '666-666-1234' into text field 'id=MainContent_txtFaxNumber'</msg>
-<status status="PASS" endtime="20180226 16:30:00.026" starttime="20180226 16:29:59.922"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_btnSubmitContact</arg>
-</arguments>
-<msg timestamp="20180226 16:30:00.026" level="INFO">Clicking element 'id=MainContent_btnSubmitContact'.</msg>
-<status status="PASS" endtime="20180226 16:30:00.077" starttime="20180226 16:30:00.026"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Clients (Buyer)</arg>
-</arguments>
-<status status="PASS" endtime="20180226 16:30:00.086" starttime="20180226 16:30:00.077"></status>
-</kw>
-<status status="PASS" endtime="20180226 16:30:00.086" starttime="20180226 16:29:58.436"></status>
-</kw>
-<kw name="Edit Primary Buyer Contact Details" library="Contact">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180226 16:30:03.088" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180226 16:30:03.089" starttime="20180226 16:30:00.086"></status>
+<msg timestamp="20180227 09:57:17.861" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180227 09:57:17.862" starttime="20180227 09:57:14.861"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_lvClients_btnEditClient_0</arg>
-</arguments>
-<msg timestamp="20180226 16:30:03.089" level="INFO">Clicking element 'id=MainContent_lvClients_btnEditClient_0'.</msg>
-<status status="PASS" endtime="20180226 16:30:04.493" starttime="20180226 16:30:03.089"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element specified with `locator` is visible.</doc>
-<arguments>
-<arg>id=MdlContact</arg>
-</arguments>
-<status status="PASS" endtime="20180226 16:30:04.730" starttime="20180226 16:30:04.493"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtFirstName</arg>
-<arg>Robert</arg>
-</arguments>
-<msg timestamp="20180226 16:30:04.730" level="INFO">Typing text 'Robert' into text field 'id=MainContent_txtFirstName'</msg>
-<status status="PASS" endtime="20180226 16:30:04.814" starttime="20180226 16:30:04.730"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_btnSubmitContact</arg>
-</arguments>
-<msg timestamp="20180226 16:30:04.814" level="INFO">Clicking element 'id=MainContent_btnSubmitContact'.</msg>
-<status status="PASS" endtime="20180226 16:30:04.863" starttime="20180226 16:30:04.814"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Clients (Buyer)</arg>
-</arguments>
-<status status="PASS" endtime="20180226 16:30:04.871" starttime="20180226 16:30:04.863"></status>
-</kw>
-<status status="PASS" endtime="20180226 16:30:04.871" starttime="20180226 16:30:00.086"></status>
-</kw>
-<kw name="Edit Secondary Buyer Contact Details" library="Contact">
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>3s</arg>
-</arguments>
-<msg timestamp="20180226 16:30:07.873" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180226 16:30:07.874" starttime="20180226 16:30:04.872"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_lvClients_btnEditClient_1</arg>
-</arguments>
-<msg timestamp="20180226 16:30:07.874" level="INFO">Clicking element 'id=MainContent_lvClients_btnEditClient_1'.</msg>
-<status status="PASS" endtime="20180226 16:30:08.045" starttime="20180226 16:30:07.874"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<doc>Waits until element specified with `locator` is visible.</doc>
-<arguments>
-<arg>id=MdlContact</arg>
-</arguments>
-<status status="PASS" endtime="20180226 16:30:08.282" starttime="20180226 16:30:08.045"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_txtFirstName</arg>
-<arg>Julie</arg>
-</arguments>
-<msg timestamp="20180226 16:30:08.282" level="INFO">Typing text 'Julie' into text field 'id=MainContent_txtFirstName'</msg>
-<status status="PASS" endtime="20180226 16:30:08.367" starttime="20180226 16:30:08.282"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>id=MainContent_btnSubmitContact</arg>
-</arguments>
-<msg timestamp="20180226 16:30:08.367" level="INFO">Clicking element 'id=MainContent_btnSubmitContact'.</msg>
-<status status="PASS" endtime="20180226 16:30:08.414" starttime="20180226 16:30:08.367"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>Clients (Buyer)</arg>
-</arguments>
-<status status="PASS" endtime="20180226 16:30:08.423" starttime="20180226 16:30:08.414"></status>
-</kw>
-<status status="PASS" endtime="20180226 16:30:08.423" starttime="20180226 16:30:04.872"></status>
+<status status="PASS" endtime="20180227 09:57:17.862" starttime="20180227 09:57:10.118"></status>
 </kw>
 <kw type="teardown" name="Logout rDocs" library="Common">
 <kw name="Sleep" library="BuiltIn">
@@ -475,44 +130,43 @@
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180226 16:30:11.425" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180226 16:30:11.425" starttime="20180226 16:30:08.424"></status>
+<msg timestamp="20180227 09:57:20.865" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180227 09:57:20.865" starttime="20180227 09:57:17.863"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="pnlDateMenu"]/div/div</arg>
 </arguments>
-<msg timestamp="20180226 16:30:11.426" level="INFO">Clicking element 'xpath=//*[@id="pnlDateMenu"]/div/div'.</msg>
-<status status="PASS" endtime="20180226 16:30:11.479" starttime="20180226 16:30:11.426"></status>
+<msg timestamp="20180227 09:57:20.866" level="INFO">Clicking element 'xpath=//*[@id="pnlDateMenu"]/div/div'.</msg>
+<status status="PASS" endtime="20180227 09:57:20.922" starttime="20180227 09:57:20.865"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180226 16:30:13.482" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180226 16:30:13.482" starttime="20180226 16:30:11.479"></status>
+<msg timestamp="20180227 09:57:22.924" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180227 09:57:22.924" starttime="20180227 09:57:20.923"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=btnLogout</arg>
 </arguments>
-<msg timestamp="20180226 16:30:13.483" level="INFO">Clicking element 'id=btnLogout'.</msg>
-<status status="PASS" endtime="20180226 16:30:13.689" starttime="20180226 16:30:13.482"></status>
+<msg timestamp="20180227 09:57:22.925" level="INFO">Clicking element 'id=btnLogout'.</msg>
+<status status="PASS" endtime="20180227 09:57:23.131" starttime="20180227 09:57:22.925"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180226 16:30:13.766" starttime="20180226 16:30:13.690"></status>
+<status status="PASS" endtime="20180227 09:57:23.208" starttime="20180227 09:57:23.132"></status>
 </kw>
-<status status="PASS" endtime="20180226 16:30:13.766" starttime="20180226 16:30:08.424"></status>
+<status status="PASS" endtime="20180227 09:57:23.208" starttime="20180227 09:57:17.862"></status>
 </kw>
-<doc>To Create Buyer Contacts On Dashboard And Contact Page</doc>
-<status status="PASS" endtime="20180226 16:30:13.766" critical="yes" starttime="20180226 16:29:50.439"></status>
+<status status="PASS" endtime="20180227 09:57:23.208" critical="yes" starttime="20180227 09:57:05.517"></status>
 </test>
 <doc>rDocs Test</doc>
-<status status="PASS" endtime="20180226 16:30:13.767" starttime="20180226 16:29:50.325"></status>
+<status status="PASS" endtime="20180227 09:57:23.210" starttime="20180227 09:57:05.405"></status>
 </suite>
 <statistics>
 <total>
