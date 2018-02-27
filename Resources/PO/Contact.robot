@@ -2,11 +2,30 @@
 Library  Selenium2Library
 
 *** Keywords ***
-Create Primary Buyer Client From Dashboard
-    #Create Tile
+Select Contacts From Tile Group
+    Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlContactsBadge_0"]/div/span[2]/a
+
+Select Add Contacts From Blank Tile
     Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_btnAddClient_0"]
     Wait Until Element Is Visible  id=MdlContact
+
+Select Add Contacts Button
+    Click Element  id=MainContent_btnAddContact
+    Wait Until Element Is Visible  id=MdlContact
+
+Select Buyer Type
     Click Element  id=MainContent_rdoBuyerContact
+
+Select Buyer-Side
+    Click Element  id=MainContent_rdoBuyerSide
+
+Select Seller Type
+    Click Element  id=MainContent_rdoSellerContact
+
+Select Seller-Side
+    Click Element  id=MainContent_rdoSellerSide
+
+Create Primary Client
     Click Element  xpath=//*[@id="MainContent_ddlContactDesc"]/option[11]
     Input Text  id=MainContent_txtFirstName  Jason
     Input Text  id=MainContent_txtLastName  Lee
@@ -21,11 +40,10 @@ Create Primary Buyer Client From Dashboard
     Input Text  id=MainContent_txtMobilePhone  777-777-7777
     Input Text  id=MainContent_txtFaxNumber  666-666-6666
     Click Element  id=MainContent_btnSubmitContact
-    Wait Until Page Contains  Clients (Buyer)
+    Wait Until Page Contains  Clients
 
-Create Secondary Buyer Client
-    Click Element  id=MainContent_btnAddContact
-    Wait Until Element Is Visible  id=MdlContact
+Create Secondary Client
+    Sleep  2s
     Click Element  xpath=//*[@id="MainContent_ddlContactDesc"]/option[10]
     Input Text  id=MainContent_txtFirstName  Karen
     Input Text  id=MainContent_txtLastName  Lee
@@ -40,22 +58,48 @@ Create Secondary Buyer Client
     Input Text  id=MainContent_txtMobilePhone  777-777-1234
     Input Text  id=MainContent_txtFaxNumber  666-666-1234
     Click Element  id=MainContent_btnSubmitContact
-    Wait Until Page Contains  Clients (Buyer)
+    Sleep  2s
+    Wait Until Page Contains  Clients
 
-Edit Primary Buyer Contact Details
-    Sleep  3s
+Edit Primary Contact Details
+    Sleep  2s
     Click Element  id=MainContent_lvClients_btnEditClient_0
     Wait Until Element Is Visible  id=MdlContact
     Input Text  id=MainContent_txtFirstName  Robert
     Click Element  id=MainContent_btnSubmitContact
     Wait Until Page Contains  Clients (Buyer)
+    Sleep  2s
 
-Edit Secondary Buyer Contact Details
-    Sleep  3s
+Edit Secondary Contact Details
+    Sleep  2s
     Click Element  id=MainContent_lvClients_btnEditClient_1
     Wait Until Element Is Visible  id=MdlContact
     Input Text  id=MainContent_txtFirstName  Julie
     Click Element  id=MainContent_btnSubmitContact
     Wait Until Page Contains  Clients (Buyer)
+    Sleep  2s
 
+Allow Primary Contact To Upload
+    Sleep  2s
+    Click Element  xpath=//*[@id="MainContent_lvClients_btnAllowUploadClient_0"]/i
+    Sleep  2s
 
+Email Primary Contact Credentials
+    Click Element  id=MainContent_lvClients_btnEmailLoginClient_0
+    Sleep  2s
+    Click Element  id=MainContent_btnSubmitSendLogin
+    Sleep  2s
+    Click Element  id=MainContent_btnCloseSendLogin
+
+Delete Primary Contact
+    Sleep  2s
+    Click Element  id=MainContent_lvClients_btnTrash_0
+    Sleep  2s
+    Click Element  id=MainContent_btnSubmitDeleteClient
+
+Delete Secondary Contact
+    Sleep  2s
+    Click Element  id=MainContent_lvClients_btnTrash_1
+    Sleep  2s
+    Click Element  id=MainContent_btnSubmitDeleteClient
+    Sleep  2s
