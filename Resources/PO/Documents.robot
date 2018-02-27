@@ -85,7 +85,7 @@ Ready For Review Documents
 
 Review Documents
     Click Element  id=MainContent_pnlActionReview
-    Sleep  2s
+    Sleep  5s
 
 Rename Documents
     Click Element  id=MainContent_pnlActionRename
@@ -148,6 +148,37 @@ eSigning Documents
     Click Element  id=MainContent_UCEsign_btnXCancel
     Sleep  3s
 
+Reviewing Documents
+    Select First Documents
+    Select Dropdown Work With Documents
+    Review Documents
+    Input Text  id=MainContent_UCReview_txtNoteArea  This is a test
+    Click Element  xpath=//*[@id="aReviewEmail"]
+    Sleep  2s
+    Click Element  xpath=//*[@id="MainContent_UCReview_pnlReviewer"]/div/div/ul/li[2]/a
+    Sleep  1s
+    Click Element  id=MainContent_UCReview_lbReadyForReview
+    Sleep  1s
+    Click Element  id=MainContent_UCReview_btnCloseReview
+    Sleep  3s
+
+Ready for Reviewing Documents
+    Select First Documents
+    Select Dropdown Work With Documents
+    Ready For Review Documents
+    Click Element  xpath=//*[@id="MdlReadyforReview"]/div[2]/div/div/div[1]/div[2]/div/div[2]/div/a
+    Sleep  2s
+    Click Element  xpath=//*[@id="MdlReadyforReview"]/div[2]/div/div/div[1]/div[2]/div/div[2]/div/ul/li[4]/a
+    Sleep  1s
+    Click Element  xpath=//*[@id="aReadyReviewEmail"]
+    Sleep  2s
+    Click Element  xpath=//*[@id="MdlReadyforReview"]/div[2]/div/div/div[1]/div[2]/div/div[6]/div/ul/li[2]/a
+    Sleep  1s
+    Click Element  xpath=//*[@id="MainContent_UCReadyforReview_lnReadyForReview"]
+
+Moving Documents
+
+Copying Documents
 
 
 

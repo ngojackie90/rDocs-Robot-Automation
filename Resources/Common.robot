@@ -9,10 +9,16 @@ Library  Selenium2Library
 Login to rDocs
     Open Browser    https://abcrealty.stage.myrdocs.com  chrome
     Wait Until Page Contains    Username
+    Agent Login
+    Click Button  id=btnLogin
+
+Broker Login
     Input Text  id=txtUserName  broker.automation
     Input Text  id=txtPassword  aaaa
-    Click Button  id=btnLogin
-    Wait Until Page Contains  Opportunity/Transaction
+
+Agent Login
+    Input Text  id=txtUserName  agent.automation
+    Input Text  id=txtPassword  password123
 
 Logout rDocs
     Sleep  3s
