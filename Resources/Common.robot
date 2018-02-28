@@ -7,7 +7,7 @@ Library  Selenium2Library
 
 *** Keywords ***
 Login to rDocs
-    Open Browser    https://abcrealty.stage.myrdocs.com  chrome
+    Open Browser    https://abcrealty.stage.myrdocs.com  firefox
     Wait Until Page Contains    Username
     Agent Login
     Click Button  id=btnLogin

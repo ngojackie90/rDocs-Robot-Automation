@@ -5,6 +5,7 @@ Resource  ../Resources/PO/Dropdown.robot
 Resource  ../Resources/PO/Contact.robot
 Resource  ../Resources/PO/Property.robot
 Resource  ../Resources/PO/Documents.robot
+Resource  ../Resources/PO/Esign.robot
 
 
 
@@ -97,6 +98,7 @@ Work With Documents Action
     Documents.Renaming Documents
     Documents.Removing Second Documents
     Documents.Printing Documents
+    Documents.Select First Documents
     Documents.eSigning Documents
     Documents.Reviewing Documents
     Documents.Ready for Reviewing Documents
@@ -127,6 +129,29 @@ Extract Documents
     Documents.Click Extract Icon
     Documents.Select Page 1 And 2
     Documents.Name New Extract Document
+
+Documents eSign
+    [Documentation]  Test eSign Without Contacts In Tile
+    Common.Create Tile
+    Documents.Select Documents From Dashboard
+    Documents.Select Add Documents Button
+    Documents.Upload Documents By Browser
+    Documents.Upload Documents And Close
+    Documents.Esigning Documents
+
+
+Dashboard eSign  #Look Back Later
+    Common.Create Tile
+    Sleep  1s
+    Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_lnkQuickEsign_0"]/i
+    Sleep  10s
+    Esign.Select eSign Frame
+    Esign.Step 1 eSign
+    Sleep  3s
+
+
+
+
 
 
 
