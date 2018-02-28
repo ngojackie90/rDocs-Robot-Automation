@@ -117,6 +117,16 @@ Change Privilege Settings
     Documents.Change Privilege To Private
     Documents.Change Privilege To Shared
 
+Extract Documents
+    [Documentation]  Upload First Document And Extract Page 1 And 2
+    Common.Create Tile
+    Documents.Select Documents From Dashboard
+    Documents.Select Add Documents Button
+    Documents.Upload Documents By Browser
+    Documents.Upload Documents And Close
+    Documents.Click Extract Icon
+    Documents.Select Page 1 And 2
+    Documents.Name New Extract Document
 
 
 

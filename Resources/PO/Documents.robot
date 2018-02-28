@@ -65,6 +65,10 @@ Click Privilege Icon
 Upload File
     Choose File  id=MainContent_UCUploadDocBrowser_fuFileUpload  /Users/Work/Dropbox/github/FileTest/Datasheet.pdf
 
+Click Extract Icon
+    Click Element  id=MainContent_lvDocList_btnDocUtil_0
+    Sleep  2s
+
 #-------- Upload Documents ---------
 Upload Documents And Close
     Input Text  id=MainContent_UCUploadDocBrowser_txtDisplayName  Datasheet
@@ -249,3 +253,20 @@ Change Privilege To Shared
     Sleep  2s
     Document Security Settings Shared
 
+#----- Extract -------
+Select Page 1 And 2
+    Click Element  id=MainContent_ucDocumentUtil_rptDocumentPage_imgDocPage_0
+    Sleep  1s
+    Click Element  id=MainContent_ucDocumentUtil_rptDocumentPage_imgDocPage_1
+    Sleep  1s
+
+Name New Extract Document
+    Input Text  xpath=//*[@id="MainContent_ucDocumentUtil_txtDocumentName"]  Automation Extract
+    Sleep  1s
+    Input Text  xpath=//*[@id="MainContent_ucDocumentUtil_txtDocumentDescription"]  This is a test
+    Sleep  1s
+    Click Element  id=ctl00_MainContent_ucDocumentUtil_lbExtract
+    Sleep  10s
+    Click Element  xpath=//*[@id="MainContent_ucDocumentUtil_lbClose"]
+    Sleep  5s
+    Wait Until Page Contains  Automation Extract
