@@ -96,6 +96,7 @@ Work With Documents Action
     #Documents.eSigning Documents
     #Documents.Reviewing Documents
     #Documents.Ready for Reviewing Documents
-    Documents.Copying Documents
+    #Documents.Copying Documents
+    Documents.Moving Documents
 
 *** Keywords ***

@@ -181,10 +181,16 @@ Copying Documents
     Select Dropdown Work With Documents
     Copy Documents
     Select From List By Value  id=MainContent_UCMoveCopy_DDLMoveFileList  12809
-    Sleep  2s
+    Sleep  1s
     Click Element  id=MainContent_UCMoveCopy_btnCopy
 
 Moving Documents
+    Select First Documents
+    Select Dropdown Work With Documents
+    Move Documents
+    Select From List By Value  id=MainContent_UCMoveCopy_DDLMoveFileList  12810
+    Sleep  1s
+    Click Element  id=MainContent_UCMoveCopy_btnMove
 
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180227 15:54:05.785" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
+<robot generated="20180227 16:00:19.065" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
 <suite source="/Users/Work/PycharmProjects/rDocs/tests/rdocs.robot" id="s1" name="Rdocs">
 <test id="s1-t1" name="Work With Documents Action">
 <kw type="setup" name="Login to rDocs" library="Common">
@@ -9,15 +9,15 @@
 <arg>https://abcrealty.stage.myrdocs.com</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20180227 15:54:05.903" level="INFO">Opening browser 'chrome' to base url 'https://abcrealty.stage.myrdocs.com'</msg>
-<status status="PASS" endtime="20180227 15:54:07.978" starttime="20180227 15:54:05.902"></status>
+<msg timestamp="20180227 16:00:19.206" level="INFO">Opening browser 'chrome' to base url 'https://abcrealty.stage.myrdocs.com'</msg>
+<status status="PASS" endtime="20180227 16:00:21.332" starttime="20180227 16:00:19.205"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Username</arg>
 </arguments>
-<status status="PASS" endtime="20180227 15:54:07.995" starttime="20180227 15:54:07.979"></status>
+<status status="PASS" endtime="20180227 16:00:21.347" starttime="20180227 16:00:21.333"></status>
 </kw>
 <kw name="Agent Login" library="Common">
 <kw name="Input Text" library="Selenium2Library">
@@ -26,8 +26,8 @@
 <arg>id=txtUserName</arg>
 <arg>agent.automation</arg>
 </arguments>
-<msg timestamp="20180227 15:54:07.996" level="INFO">Typing text 'agent.automation' into text field 'id=txtUserName'</msg>
-<status status="PASS" endtime="20180227 15:54:08.121" starttime="20180227 15:54:07.996"></status>
+<msg timestamp="20180227 16:00:21.348" level="INFO">Typing text 'agent.automation' into text field 'id=txtUserName'</msg>
+<status status="PASS" endtime="20180227 16:00:21.474" starttime="20180227 16:00:21.348"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -35,20 +35,20 @@
 <arg>id=txtPassword</arg>
 <arg>password123</arg>
 </arguments>
-<msg timestamp="20180227 15:54:08.121" level="INFO">Typing text 'password123' into text field 'id=txtPassword'</msg>
-<status status="PASS" endtime="20180227 15:54:08.194" starttime="20180227 15:54:08.121"></status>
+<msg timestamp="20180227 16:00:21.474" level="INFO">Typing text 'password123' into text field 'id=txtPassword'</msg>
+<status status="PASS" endtime="20180227 16:00:21.560" starttime="20180227 16:00:21.474"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:08.194" starttime="20180227 15:54:07.995"></status>
+<status status="PASS" endtime="20180227 16:00:21.560" starttime="20180227 16:00:21.347"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>id=btnLogin</arg>
 </arguments>
-<msg timestamp="20180227 15:54:08.194" level="INFO">Clicking button 'id=btnLogin'.</msg>
-<status status="PASS" endtime="20180227 15:54:08.984" starttime="20180227 15:54:08.194"></status>
+<msg timestamp="20180227 16:00:21.560" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20180227 16:00:22.436" starttime="20180227 16:00:21.560"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:08.984" starttime="20180227 15:54:05.902"></status>
+<status status="PASS" endtime="20180227 16:00:22.437" starttime="20180227 16:00:19.205"></status>
 </kw>
 <kw name="Create Tile" library="Common">
 <kw name="Click Element" library="Selenium2Library">
@@ -56,10 +56,10 @@
 <arguments>
 <arg>id=MainContent_btnCreateNew</arg>
 </arguments>
-<msg timestamp="20180227 15:54:08.985" level="INFO">Clicking element 'id=MainContent_btnCreateNew'.</msg>
-<status status="PASS" endtime="20180227 15:54:09.566" starttime="20180227 15:54:08.985"></status>
+<msg timestamp="20180227 16:00:22.438" level="INFO">Clicking element 'id=MainContent_btnCreateNew'.</msg>
+<status status="PASS" endtime="20180227 16:00:23.018" starttime="20180227 16:00:22.437"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:09.567" starttime="20180227 15:54:08.985"></status>
+<status status="PASS" endtime="20180227 16:00:23.018" starttime="20180227 16:00:22.437"></status>
 </kw>
 <kw name="Select Documents From Dashboard" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -67,18 +67,18 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlDocsBadge_0"]/div/span[2]/a</arg>
 </arguments>
-<msg timestamp="20180227 15:54:09.568" level="INFO">Clicking element 'xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlDocsBadge_0"]/div/span[2]/a'.</msg>
-<status status="PASS" endtime="20180227 15:54:10.091" starttime="20180227 15:54:09.567"></status>
+<msg timestamp="20180227 16:00:23.019" level="INFO">Clicking element 'xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlDocsBadge_0"]/div/span[2]/a'.</msg>
+<status status="PASS" endtime="20180227 16:00:23.465" starttime="20180227 16:00:23.019"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:12.093" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:12.093" starttime="20180227 15:54:10.092"></status>
+<msg timestamp="20180227 16:00:25.466" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:25.467" starttime="20180227 16:00:23.466"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:12.094" starttime="20180227 15:54:09.567"></status>
+<status status="PASS" endtime="20180227 16:00:25.467" starttime="20180227 16:00:23.018"></status>
 </kw>
 <kw name="Select Add Documents Button" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -86,25 +86,25 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_pnlAddDocs"]/div/a</arg>
 </arguments>
-<msg timestamp="20180227 15:54:12.095" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlAddDocs"]/div/a'.</msg>
-<status status="PASS" endtime="20180227 15:54:12.146" starttime="20180227 15:54:12.094"></status>
+<msg timestamp="20180227 16:00:25.468" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlAddDocs"]/div/a'.</msg>
+<status status="PASS" endtime="20180227 16:00:25.522" starttime="20180227 16:00:25.468"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:14.147" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:14.147" starttime="20180227 15:54:12.146"></status>
+<msg timestamp="20180227 16:00:27.523" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:27.524" starttime="20180227 16:00:25.522"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>xpath=//*[@id="MainContent_pnlAddDocs"]/div/ul</arg>
 </arguments>
-<status status="PASS" endtime="20180227 15:54:14.172" starttime="20180227 15:54:14.147"></status>
+<status status="PASS" endtime="20180227 16:00:27.549" starttime="20180227 16:00:27.524"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:14.173" starttime="20180227 15:54:12.094"></status>
+<status status="PASS" endtime="20180227 16:00:27.549" starttime="20180227 16:00:25.467"></status>
 </kw>
 <kw name="Upload Documents By Browser" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -112,18 +112,18 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_btnUploadDocBrowserTop"]</arg>
 </arguments>
-<msg timestamp="20180227 15:54:14.173" level="INFO">Clicking element 'xpath=//*[@id="MainContent_btnUploadDocBrowserTop"]'.</msg>
-<status status="PASS" endtime="20180227 15:54:14.465" starttime="20180227 15:54:14.173"></status>
+<msg timestamp="20180227 16:00:27.550" level="INFO">Clicking element 'xpath=//*[@id="MainContent_btnUploadDocBrowserTop"]'.</msg>
+<status status="PASS" endtime="20180227 16:00:28.012" starttime="20180227 16:00:27.550"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:16.466" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:16.466" starttime="20180227 15:54:14.465"></status>
+<msg timestamp="20180227 16:00:30.013" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:30.014" starttime="20180227 16:00:28.012"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:16.466" starttime="20180227 15:54:14.173"></status>
+<status status="PASS" endtime="20180227 16:00:30.014" starttime="20180227 16:00:27.549"></status>
 </kw>
 <kw name="Upload Documents And Close" library="Documents">
 <kw name="Input Text" library="Selenium2Library">
@@ -132,8 +132,8 @@
 <arg>id=MainContent_UCUploadDocBrowser_txtDisplayName</arg>
 <arg>Datasheet</arg>
 </arguments>
-<msg timestamp="20180227 15:54:16.468" level="INFO">Typing text 'Datasheet' into text field 'id=MainContent_UCUploadDocBrowser_txtDisplayName'</msg>
-<status status="PASS" endtime="20180227 15:54:16.587" starttime="20180227 15:54:16.467"></status>
+<msg timestamp="20180227 16:00:30.015" level="INFO">Typing text 'Datasheet' into text field 'id=MainContent_UCUploadDocBrowser_txtDisplayName'</msg>
+<status status="PASS" endtime="20180227 16:00:30.130" starttime="20180227 16:00:30.015"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -141,8 +141,8 @@
 <arg>id=MainContent_UCUploadDocBrowser_TAUploadDocDescription</arg>
 <arg>This is a test</arg>
 </arguments>
-<msg timestamp="20180227 15:54:16.588" level="INFO">Typing text 'This is a test' into text field 'id=MainContent_UCUploadDocBrowser_TAUploadDocDescription'</msg>
-<status status="PASS" endtime="20180227 15:54:16.686" starttime="20180227 15:54:16.587"></status>
+<msg timestamp="20180227 16:00:30.130" level="INFO">Typing text 'This is a test' into text field 'id=MainContent_UCUploadDocBrowser_TAUploadDocDescription'</msg>
+<status status="PASS" endtime="20180227 16:00:30.231" starttime="20180227 16:00:30.130"></status>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <doc>Inputs the `file_path` into file input field found by `locator`.</doc>
@@ -150,53 +150,53 @@
 <arg>id=MainContent_UCUploadDocBrowser_fuFileUpload</arg>
 <arg>/Users/Work/Dropbox/github/FileTest/Datasheet.pdf</arg>
 </arguments>
-<status status="PASS" endtime="20180227 15:54:16.716" starttime="20180227 15:54:16.687"></status>
+<status status="PASS" endtime="20180227 16:00:30.265" starttime="20180227 16:00:30.232"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:18.717" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:18.718" starttime="20180227 15:54:16.716"></status>
+<msg timestamp="20180227 16:00:32.267" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:32.267" starttime="20180227 16:00:30.265"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=MainContent_UCUploadDocBrowser_btnUploadClose</arg>
 </arguments>
-<msg timestamp="20180227 15:54:18.719" level="INFO">Clicking element 'id=MainContent_UCUploadDocBrowser_btnUploadClose'.</msg>
-<status status="PASS" endtime="20180227 15:54:18.767" starttime="20180227 15:54:18.718"></status>
+<msg timestamp="20180227 16:00:32.268" level="INFO">Clicking element 'id=MainContent_UCUploadDocBrowser_btnUploadClose'.</msg>
+<status status="PASS" endtime="20180227 16:00:32.316" starttime="20180227 16:00:32.268"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:23.769" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:23.769" starttime="20180227 15:54:18.767"></status>
+<msg timestamp="20180227 16:00:37.317" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:37.318" starttime="20180227 16:00:32.317"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:23.769" starttime="20180227 15:54:16.467"></status>
+<status status="PASS" endtime="20180227 16:00:37.318" starttime="20180227 16:00:30.014"></status>
 </kw>
-<kw name="Copying Documents" library="Documents">
+<kw name="Moving Documents" library="Documents">
 <kw name="Select First Documents" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=MainContent_lvDocList_chkSelect_0</arg>
 </arguments>
-<msg timestamp="20180227 15:54:23.771" level="INFO">Clicking element 'id=MainContent_lvDocList_chkSelect_0'.</msg>
-<status status="PASS" endtime="20180227 15:54:23.825" starttime="20180227 15:54:23.771"></status>
+<msg timestamp="20180227 16:00:37.320" level="INFO">Clicking element 'id=MainContent_lvDocList_chkSelect_0'.</msg>
+<status status="PASS" endtime="20180227 16:00:37.370" starttime="20180227 16:00:37.319"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:24.826" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180227 15:54:24.826" starttime="20180227 15:54:23.825"></status>
+<msg timestamp="20180227 16:00:38.371" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180227 16:00:38.372" starttime="20180227 16:00:37.370"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:24.827" starttime="20180227 15:54:23.770"></status>
+<status status="PASS" endtime="20180227 16:00:38.372" starttime="20180227 16:00:37.319"></status>
 </kw>
 <kw name="Select Dropdown Work With Documents" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -204,56 +204,64 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a</arg>
 </arguments>
-<msg timestamp="20180227 15:54:24.828" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a'.</msg>
-<status status="PASS" endtime="20180227 15:54:24.880" starttime="20180227 15:54:24.827"></status>
+<msg timestamp="20180227 16:00:38.373" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a'.</msg>
+<status status="PASS" endtime="20180227 16:00:38.424" starttime="20180227 16:00:38.373"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:26.881" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:26.882" starttime="20180227 15:54:24.880"></status>
+<msg timestamp="20180227 16:00:40.426" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:40.426" starttime="20180227 16:00:38.424"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:26.882" starttime="20180227 15:54:24.827"></status>
+<status status="PASS" endtime="20180227 16:00:40.427" starttime="20180227 16:00:38.372"></status>
 </kw>
-<kw name="Copy Documents" library="Documents">
+<kw name="Move Documents" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=MainContent_pnlActionMoveCopy</arg>
 </arguments>
-<msg timestamp="20180227 15:54:26.883" level="INFO">Clicking element 'id=MainContent_pnlActionMoveCopy'.</msg>
-<status status="PASS" endtime="20180227 15:54:27.208" starttime="20180227 15:54:26.883"></status>
+<msg timestamp="20180227 16:00:40.428" level="INFO">Clicking element 'id=MainContent_pnlActionMoveCopy'.</msg>
+<status status="PASS" endtime="20180227 16:00:41.450" starttime="20180227 16:00:40.428"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:29.209" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:29.209" starttime="20180227 15:54:27.209"></status>
+<msg timestamp="20180227 16:00:43.451" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:43.451" starttime="20180227 16:00:41.450"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:29.209" starttime="20180227 15:54:26.882"></status>
+<status status="PASS" endtime="20180227 16:00:43.451" starttime="20180227 16:00:40.427"></status>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <doc>Selects `*values` from list identified by `locator`</doc>
 <arguments>
 <arg>id=MainContent_UCMoveCopy_DDLMoveFileList</arg>
-<arg>12809</arg>
+<arg>12810</arg>
 </arguments>
-<msg timestamp="20180227 15:54:29.210" level="INFO">Selecting value(s) '12809' from list 'id=MainContent_UCMoveCopy_DDLMoveFileList'.</msg>
-<status status="PASS" endtime="20180227 15:54:29.279" starttime="20180227 15:54:29.210"></status>
+<msg timestamp="20180227 16:00:43.452" level="INFO">Selecting value(s) '12810' from list 'id=MainContent_UCMoveCopy_DDLMoveFileList'.</msg>
+<status status="PASS" endtime="20180227 16:00:43.519" starttime="20180227 16:00:43.452"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180227 16:00:44.519" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180227 16:00:44.520" starttime="20180227 16:00:43.519"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>id=MainContent_UCMoveCopy_btnCopy</arg>
+<arg>id=MainContent_UCMoveCopy_btnMove</arg>
 </arguments>
-<msg timestamp="20180227 15:54:29.279" level="INFO">Clicking element 'id=MainContent_UCMoveCopy_btnCopy'.</msg>
-<status status="PASS" endtime="20180227 15:54:29.328" starttime="20180227 15:54:29.279"></status>
+<msg timestamp="20180227 16:00:44.520" level="INFO">Clicking element 'id=MainContent_UCMoveCopy_btnMove'.</msg>
+<status status="PASS" endtime="20180227 16:00:44.573" starttime="20180227 16:00:44.520"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:29.328" starttime="20180227 15:54:23.770"></status>
+<status status="PASS" endtime="20180227 16:00:44.573" starttime="20180227 16:00:37.318"></status>
 </kw>
 <kw type="teardown" name="Logout rDocs" library="Common">
 <kw name="Sleep" library="BuiltIn">
@@ -261,8 +269,8 @@
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:32.330" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:32.330" starttime="20180227 15:54:29.329"></status>
+<msg timestamp="20180227 16:00:47.576" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:47.577" starttime="20180227 16:00:44.574"></status>
 </kw>
 <kw name="Select Dropdown" library="Dropdown">
 <kw name="Click Element" library="Selenium2Library">
@@ -270,25 +278,25 @@
 <arguments>
 <arg>xpath=//*[@id="pnlDateMenu"]/div/div/a</arg>
 </arguments>
-<msg timestamp="20180227 15:54:32.331" level="INFO">Clicking element 'xpath=//*[@id="pnlDateMenu"]/div/div/a'.</msg>
-<status status="PASS" endtime="20180227 15:54:32.383" starttime="20180227 15:54:32.331"></status>
+<msg timestamp="20180227 16:00:47.578" level="INFO">Clicking element 'xpath=//*[@id="pnlDateMenu"]/div/div/a'.</msg>
+<status status="PASS" endtime="20180227 16:00:47.631" starttime="20180227 16:00:47.577"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180227 15:54:35.385" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180227 15:54:35.385" starttime="20180227 15:54:32.384"></status>
+<msg timestamp="20180227 16:00:50.632" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180227 16:00:50.633" starttime="20180227 16:00:47.631"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>xpath=//*[@id="pnlDateMenu"]/div/div/ul</arg>
 </arguments>
-<status status="PASS" endtime="20180227 15:54:35.411" starttime="20180227 15:54:35.386"></status>
+<status status="PASS" endtime="20180227 16:00:50.659" starttime="20180227 16:00:50.633"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:35.411" starttime="20180227 15:54:32.330"></status>
+<status status="PASS" endtime="20180227 16:00:50.659" starttime="20180227 16:00:47.577"></status>
 </kw>
 <kw name="Select Logout" library="Dropdown">
 <kw name="Click Element" library="Selenium2Library">
@@ -296,21 +304,21 @@
 <arguments>
 <arg>id=btnLogout</arg>
 </arguments>
-<msg timestamp="20180227 15:54:35.412" level="INFO">Clicking element 'id=btnLogout'.</msg>
-<status status="PASS" endtime="20180227 15:54:35.617" starttime="20180227 15:54:35.412"></status>
+<msg timestamp="20180227 16:00:50.660" level="INFO">Clicking element 'id=btnLogout'.</msg>
+<status status="PASS" endtime="20180227 16:00:50.854" starttime="20180227 16:00:50.660"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:35.617" starttime="20180227 15:54:35.411"></status>
+<status status="PASS" endtime="20180227 16:00:50.854" starttime="20180227 16:00:50.660"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180227 15:54:35.696" starttime="20180227 15:54:35.617"></status>
+<status status="PASS" endtime="20180227 16:00:50.932" starttime="20180227 16:00:50.855"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:35.696" starttime="20180227 15:54:29.329"></status>
+<status status="PASS" endtime="20180227 16:00:50.933" starttime="20180227 16:00:44.574"></status>
 </kw>
-<status status="PASS" endtime="20180227 15:54:35.696" critical="yes" starttime="20180227 15:54:05.902"></status>
+<status status="PASS" endtime="20180227 16:00:50.933" critical="yes" starttime="20180227 16:00:19.205"></status>
 </test>
 <doc>rDocs Test</doc>
-<status status="PASS" endtime="20180227 15:54:35.697" starttime="20180227 15:54:05.788"></status>
+<status status="PASS" endtime="20180227 16:00:50.934" starttime="20180227 16:00:19.069"></status>
 </suite>
 <statistics>
 <total>
