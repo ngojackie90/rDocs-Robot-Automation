@@ -28,6 +28,30 @@ Upload Documents By Fax
     Click Element  xpath=//*[@id="MainContent_btnUploadDocFaxTop"]
     Sleep  2s
 
+Document Security Settings Private
+    Click Element  id=MainContent_UCDocumentSecurity_RBLDocumentSecurity_0
+    Sleep  1s
+
+Document Security Settings Public
+    Click Element  id=MainContent_UCDocumentSecurity_RBLDocumentSecurity_1
+    Sleep  1s
+
+Document Security Settings Shared
+    Click Element  id=MainContent_UCDocumentSecurity_RBLDocumentSecurity_2
+    Sleep  1s
+
+Upload Document Private Setting
+    Click Element  id=MainContent_UCUploadDocBrowser_UCDocumentSecurity_RBLDocumentSecurity_0
+    Sleep  1s
+
+Upload Document Public Setting
+    Click Element  id=MainContent_UCUploadDocBrowser_UCDocumentSecurity_RBLDocumentSecurity_1
+    Sleep  1s
+
+Upload Document Shared Setting
+    Click Element  id=MainContent_UCUploadDocBrowser_UCDocumentSecurity_RBLDocumentSecurity_2
+    Sleep  1s
+    
 #-------- Upload Documents ---------
 Upload Documents And Close
     Input Text  id=MainContent_UCUploadDocBrowser_txtDisplayName  Datasheet
