@@ -20,8 +20,20 @@ Test Teardown  Common.Logout rDocs
 
 *** Test Cases ***
 
-Create Blank Tile
+#---- Property ----
+
+Add Property By MLS Search
+    [Documentation]  To Create Blank Tile And Add Property
     Common.Create Tile
+    Property.Add Property Button
+    Property.Property MLS Search
+
+Add Property Manually
+    Common.Create Tile
+    Property.Add Property Button
+    Property.Add Property Manual
+
+#------- Contacts ---------
 
 Create And Edit Buyer Contacts
     [Documentation]  To Create Buyer Contacts On Dashboard And Contact Page
@@ -34,17 +46,6 @@ Create And Edit Buyer Contacts
     Contact.Edit Primary Contact Details
     Contact.Edit Secondary Contact Details
     Common.Back To Dashboard
-
-Add Property By MLS Search
-    [Documentation]  To Create Blank Tile And Add Property
-    Common.Create Tile
-    Property.Add Property Button
-    Property.Property MLS Search
-
-Add Property Manually
-    Common.Create Tile
-    Property.Add Property Button
-    Property.Add Property Manual
 
 Add Property And Buyer Contacts
     [Documentation]  To Create Blank Tile, Add Property, Add Primary Contact, And Secondary Contact
@@ -72,6 +73,8 @@ Contact Actions
     Contact.Email Primary Contact Credentials
     Contact.Allow Primary Contact To Upload
     Common.Back To Dashboard
+
+#------ Documents ------
 
 Upload Document Test
     [Documentation]  Upload and ReUpload Document
