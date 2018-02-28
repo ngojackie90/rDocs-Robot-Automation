@@ -77,7 +77,7 @@ Email Documents
 
 eSign Documents
     Click Element  id=MainContent_pnlActionEsign
-    Sleep  2s
+    Sleep  10s
 
 Ready For Review Documents
     Click Element  id=MainContent_pnlActionReadyForReview
@@ -141,12 +141,13 @@ Emailing Documents
     Sleep  2s
 
 eSigning Documents
-    Select First Documents
+    Select First Documents  #Uncheck First Documents
+    Select First Documents  #Check First Documents Again
     Select Dropdown Work With Documents
     eSign Documents
+    #Sleep  10s
+    Click Element  xpath=//*[@id="MainContent_UCEsign_btnXCancel"]
     Sleep  10s
-    Click Element  id=MainContent_UCEsign_btnXCancel
-    Sleep  3s
 
 Reviewing Documents
     Select First Documents
@@ -183,6 +184,7 @@ Copying Documents
     Select From List By Value  id=MainContent_UCMoveCopy_DDLMoveFileList  12809
     Sleep  1s
     Click Element  id=MainContent_UCMoveCopy_btnCopy
+    Sleep  2s
 
 Moving Documents
     Select First Documents
@@ -191,7 +193,7 @@ Moving Documents
     Select From List By Value  id=MainContent_UCMoveCopy_DDLMoveFileList  12810
     Sleep  1s
     Click Element  id=MainContent_UCMoveCopy_btnMove
-
+    Sleep  2s
 
 
 

@@ -84,19 +84,24 @@ Upload Document Test
     Common.Back To Dashboard
 
 Work With Documents Action
+    [Documentation]  Test Work With Documents Functionality
     Common.Create Tile
     Documents.Select Documents From Dashboard
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
-    #Documents.Upload Documents And Add
+    Documents.Upload Documents And Add
     Documents.Upload Documents And Close
-    #Documents.Renaming Documents
-    #Documents.Removing Second Documents
-    #Documents.Printing Documents
-    #Documents.eSigning Documents
-    #Documents.Reviewing Documents
-    #Documents.Ready for Reviewing Documents
-    #Documents.Copying Documents
+    Documents.Renaming Documents
+    Documents.Removing Second Documents
+    Documents.Printing Documents
+    Documents.eSigning Documents
+    Documents.Reviewing Documents
+    Documents.Ready for Reviewing Documents
+    Documents.Copying Documents
     Documents.Moving Documents
+    Documents.Select Add Documents Button
+    Documents.Upload Documents By Browser
+    Documents.Upload Documents And Close
+
 
 *** Keywords ***
