@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4afd75c0-8cd1-4830-aa6d-120e22c22c10" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Resources/Common.robot" afterPath="$PROJECT_DIR$/Resources/Common.robot" />
       <change beforePath="$PROJECT_DIR$/Resources/PO/Documents.robot" afterPath="$PROJECT_DIR$/Resources/PO/Documents.robot" />
       <change beforePath="$PROJECT_DIR$/Resources/PO/Esign.robot" afterPath="$PROJECT_DIR$/Resources/PO/Esign.robot" />
-      <change beforePath="$PROJECT_DIR$/Results/log.html" afterPath="$PROJECT_DIR$/Results/log.html" />
-      <change beforePath="$PROJECT_DIR$/Results/output.xml" afterPath="$PROJECT_DIR$/Results/output.xml" />
-      <change beforePath="$PROJECT_DIR$/Results/report.html" afterPath="$PROJECT_DIR$/Results/report.html" />
-      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-1.png" afterPath="$PROJECT_DIR$/Results/selenium-screenshot-1.png" />
-      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-2.png" afterPath="$PROJECT_DIR$/Results/selenium-screenshot-2.png" />
-      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-3.png" afterPath="$PROJECT_DIR$/Results/selenium-screenshot-3.png" />
-      <change beforePath="$PROJECT_DIR$/Results/selenium-screenshot-4.png" afterPath="$PROJECT_DIR$/Results/selenium-screenshot-4.png" />
-      <change beforePath="$PROJECT_DIR$/Tests/Rdocs.robot" afterPath="$PROJECT_DIR$/Tests/Rdocs.robot" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rdocs.robot" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rdocs.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/Rdocs.robot">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
@@ -86,8 +77,8 @@
       <file leaf-file-name="Documents.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Resources/PO/Documents.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1192">
-              <caret line="197" column="43" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="196" column="0" lean-forward="true" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
               <folding>
                 <element signature="e#0#70#0" expanded="true" />
               </folding>
@@ -95,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Esign.robot" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Esign.robot" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Resources/PO/Esign.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="122" column="4" lean-forward="false" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -132,11 +123,11 @@
         <option value="$PROJECT_DIR$/Resources/PO/Dropdown.robot" />
         <option value="$PROJECT_DIR$/Resources/PO/Contact.robot" />
         <option value="$PROJECT_DIR$/Resources/PO/Property.robot" />
-        <option value="$PROJECT_DIR$/Resources/PO/Documents.robot" />
         <option value="$PROJECT_DIR$/Resources/Common.robot" />
         <option value="$PROJECT_DIR$/Resources/Common.robot" />
-        <option value="$PROJECT_DIR$/Resources/PO/Esign.robot" />
         <option value="$PROJECT_DIR$/Tests/Rdocs.robot" />
+        <option value="$PROJECT_DIR$/Resources/PO/Esign.robot" />
+        <option value="$PROJECT_DIR$/Resources/PO/Documents.robot" />
       </list>
     </option>
   </component>
@@ -660,24 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/PO/Esign.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="122" column="4" lean-forward="false" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/PO/Documents.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1192">
-          <caret line="197" column="43" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Rdocs.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -685,6 +658,24 @@
           <folding>
             <element signature="e#0#483#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/PO/Documents.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="196" column="0" lean-forward="true" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/PO/Esign.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

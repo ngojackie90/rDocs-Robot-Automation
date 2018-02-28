@@ -187,16 +187,13 @@ eSigning Documents
     Select Dropdown Work With Documents
     eSign Documents
     Esign.Select eSign Frame
-    Esign.Step 1 eSign
-    Esign.Step 2 eSign
-    Esign.Step 3 eSign
-    Esign.Step 4 eSign
-    Esign.Step 5 eSign
-    Esign.Step 6 eSign
-    #Sleep  10s
+    Esign.Step 1 eSign Create Session
+    Esign.Step 2 eSign Add Signers
+    Esign.Step 3 eSign Upload Documents
+    Esign.Step 4 eSign Add Signing Fields
+    Esign.Step 5 eSign Review Templates
+    Esign.Step 6 eSign Confirm
     Esign.Close eSign Modal
-    #Click Element  xpath=//*[@id="MainContent_UCEsign_btnXCancel"]
-    Sleep  10s
 
 Reviewing Documents
     Select First Documents

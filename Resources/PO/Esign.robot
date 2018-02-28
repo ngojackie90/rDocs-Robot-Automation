@@ -3,12 +3,17 @@ Library  Selenium2Library
 
 *** Keywords ***
 Select eSign Frame
-    Select Frame  xpath=//*[@id="MainContent_UCEsign_frameEsign"]
+    Select Frame  xpath=//*[@id="MainContent_UCEsign_frameEsign"]  #Select eSign iFrame
     Sleep  2s
 
 Include Me As A Signer
-    Click Element  id=ctl00_ContentPlaceHolder1_firstsigner
+    Click Element  id=ctl00_ContentPlaceHolder1_firstsigner  #Check Include Me As Signer
     Sleep  1s
+
+Close eSign Modal
+    Unselect Frame
+    Click Element  xpath=//*[@id="MainContent_UCEsign_btnXCancel"]
+    Sleep  10s
 
 #---- eSign Next Icon -----
 
@@ -54,6 +59,8 @@ Apply Template Next
     Sleep  3s
 
 #------- Designate Signer --------
+Add Signers Icon
+    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl00_lbInsert"]
 
 Select Designate Signers
     #Select Frame  xpath=//*[@id="packagetoadd_GridData"]
@@ -87,38 +94,28 @@ Add Signers
 
 #---- eSign Steps -----
 
-Step 1 eSign
+Step 1 eSign Create Session
     Add Session Title
     Step 1 Next
 
-Step 2 eSign
-    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl00_lbInsert"]
+Step 2 eSign Add Signers
+    Add Signers Icon
     Sleep  5s
     Add Signers
     Step 2 Next
 
-Step 3 eSign
-    #Apply Template Icon
-    #Select Template
-    #Apply Template Next
-    #Select Designate Signers
-    #Designate Signers Next
-    #Sleep  5s
-    #Designate Signers Next
+Step 3 eSign Upload Documents
     Step 3 Next
 
-Step 4 eSign
+Step 4 eSign Add Signing Fields
     Drag Signature
     Sleep  3s
     Step 4 Next
 
-Step 5 eSign
+Step 5 eSign Review Templates
     Step 5 Next
 
-Step 6 eSign
+Step 6 eSign Confirm
     Step 6 Next
 
-Close eSign Modal
-    Unselect Frame
-    Click Element  xpath=//*[@id="MainContent_UCEsign_btnXCancel"]
-    Sleep  5s
+
