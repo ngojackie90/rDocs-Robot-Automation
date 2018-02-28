@@ -87,7 +87,7 @@ Upload Document Test
     Common.Back To Dashboard
 
 Work With Documents Action
-    [Documentation]  Test Work With Documents Functionality
+    [Documentation]  Test Work With Documents Functionality Using First Document
     Common.Create Tile
     Documents.Select Documents From Dashboard
     Documents.Select Add Documents Button
@@ -105,6 +105,19 @@ Work With Documents Action
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Close
+
+Change Privilege Settings
+    [Documentation]  Upload First Document And Change Privilege Settings
+    Common.Create Tile
+    Documents.Select Documents From Dashboard
+    Documents.Select Add Documents Button
+    Documents.Upload Documents By Browser
+    Documents.Upload Documents And Close
+    Documents.Change Privilege To Public
+    Documents.Change Privilege To Private
+    Documents.Change Privilege To Shared
+
+
 
 
 *** Keywords ***

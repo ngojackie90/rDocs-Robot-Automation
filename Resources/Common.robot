@@ -28,6 +28,7 @@ Logout rDocs
 
 Create Tile
     Click Element  id=MainContent_btnCreateNew
+    Sleep  2s
 
 Back To Dashboard
     Click Link  xpath=//*[@id="pnlReturnToDashboard"]/div/a

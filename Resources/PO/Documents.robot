@@ -31,14 +31,20 @@ Upload Documents By Fax
 Document Security Settings Private
     Click Element  id=MainContent_UCDocumentSecurity_RBLDocumentSecurity_0
     Sleep  1s
+    Click Element  id=MainContent_btnSecurityChange
+    Sleep  2s
 
 Document Security Settings Public
     Click Element  id=MainContent_UCDocumentSecurity_RBLDocumentSecurity_1
     Sleep  1s
+    Click Element  id=MainContent_btnSecurityChange
+    Sleep  2s
 
 Document Security Settings Shared
     Click Element  id=MainContent_UCDocumentSecurity_RBLDocumentSecurity_2
     Sleep  1s
+    Click Element  id=MainContent_btnSecurityChange
+    Sleep  2s
 
 Upload Document Private Setting
     Click Element  id=MainContent_UCUploadDocBrowser_UCDocumentSecurity_RBLDocumentSecurity_0
@@ -51,12 +57,19 @@ Upload Document Public Setting
 Upload Document Shared Setting
     Click Element  id=MainContent_UCUploadDocBrowser_UCDocumentSecurity_RBLDocumentSecurity_2
     Sleep  1s
-    
+
+Click Privilege Icon
+    Click Element  id=MainContent_lvDocList_btnViewDocSecurity_0
+    Sleep  2s
+
+Upload File
+    Choose File  id=MainContent_UCUploadDocBrowser_fuFileUpload  /Users/Work/Dropbox/github/FileTest/Datasheet.pdf
+
 #-------- Upload Documents ---------
 Upload Documents And Close
     Input Text  id=MainContent_UCUploadDocBrowser_txtDisplayName  Datasheet
     Input Text  id=MainContent_UCUploadDocBrowser_TAUploadDocDescription  This is a test
-    Choose File  id=MainContent_UCUploadDocBrowser_fuFileUpload  /Users/Work/Dropbox/github/FileTest/Datasheet.pdf
+    Upload File
     Sleep  2s
     Click Element  id=MainContent_UCUploadDocBrowser_btnUploadClose
     Sleep  5s
@@ -64,7 +77,7 @@ Upload Documents And Close
 Upload Documents And Add
     Input Text  id=MainContent_UCUploadDocBrowser_txtDisplayName  Automation
     Input Text  id=MainContent_UCUploadDocBrowser_TAUploadDocDescription  This is a test
-    Choose File  id=MainContent_UCUploadDocBrowser_fuFileUpload  /Users/Work/Dropbox/github/FileTest/Datasheet.pdf
+    Upload File
     Sleep  2s
     Click Element  id=MainContent_UCUploadDocBrowser_btnUploadAdd
     Sleep  5s
@@ -219,7 +232,20 @@ Moving Documents
     Click Element  id=MainContent_UCMoveCopy_btnMove
     Sleep  2s
 
+#---- Change Privilege Settings -----
 
+Change Privilege To Public
+    Click Privilege Icon
+    Sleep  2s
+    Document Security Settings Public
 
+Change Privilege To Private
+    Click Privilege Icon
+    Sleep  2s
+    Document Security Settings Private
 
+Change Privilege To Shared
+    Click Privilege Icon
+    Sleep  2s
+    Document Security Settings Shared
 
