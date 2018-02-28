@@ -138,6 +138,7 @@ Documents eSign
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Close
     Documents.Esigning Documents
+    Common.Back To Dashboard
 
 
 Dashboard eSign  #Look Back Later
