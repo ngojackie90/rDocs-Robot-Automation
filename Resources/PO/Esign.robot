@@ -6,6 +6,10 @@ Select eSign Frame
     Select Frame  xpath=//*[@id="MainContent_UCEsign_frameEsign"]  #Select eSign iFrame
     Sleep  2s
 
+eSign Add Package Frame
+    Select Frame  xpath=//*[@id="RadWindowWrapper_ctl00_ContentPlaceHolder1_sDocuments_AddPackage"]/table/tbody/tr[2]/td[2]/iframe\  #Select Add Template/
+    Sleep  2s
+
 Include Me As A Signer
     Click Element  id=ctl00_ContentPlaceHolder1_firstsigner  #Check Include Me As Signer
     Sleep  1s
@@ -48,9 +52,7 @@ Apply Template Icon
     Sleep  4s
 
 Select Template
-    #Select Frame  xpath=//*[@id="packagetoadd"]
-    Sleep  2s
-    Click Image  xpath=//*[@id="packagetoadd_ctl00__0"]/td[3]
+    Click Element  xpath=//*[@id="packagetoadd_ctl00_ctl05_columnSelectCheckBox"]
     #//*[@id="packagetoadd_ctl00__0"]
     Sleep  1s
 
@@ -67,7 +69,8 @@ Select Designate Signers
     Sleep  3s
     Click Element  xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_Arrow"]
     Sleep  2s
-    Select From List By Value  xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_DropDown"]/div/ul  John Awesome
+    #Select From List By Value  xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_DropDown"]/div/ul  John Awesome
+    Click Element  xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_DropDown"]/div/ul/li[2]
     Sleep  2s
 
 Designate Signers Next
@@ -106,6 +109,17 @@ Step 2 eSign Add Signers
 
 Step 3 eSign Upload Documents
     Step 3 Next
+
+Step 3 Assigning Template
+    eSign Add Package Frame
+    Select Template
+    Apply Template Next
+    Sleep  2s
+
+Step 3 Assigning Signer
+    Select Designate Signers
+    Designate Signers Next
+    Sleep  3s
 
 Step 4 eSign Add Signing Fields
     Drag Signature

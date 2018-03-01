@@ -140,6 +140,16 @@ Documents eSign
     Documents.Esigning Documents
     Common.Back To Dashboard
 
+Documents eSign Assign Template And Signer
+    [Documentation]
+    Common.Create Tile
+    Documents.Select Documents From Dashboard
+    Documents.Select Add Documents Button
+    Documents.Upload Documents By Browser
+    Documents.Upload Documents And Close
+    Documents.eSigning Documents Apple Template And Signer
+    Common.Back To Dashboard
+
 
 Dashboard eSign  #Look Back Later
     Common.Create Tile
