@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180301 10:48:32.336" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
+<robot generated="20180301 11:03:50.035" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
 <suite source="/Users/Work/PycharmProjects/rDocs/tests/rdocs.robot" id="s1" name="Rdocs">
 <test id="s1-t1" name="Documents eSign Assign Template And Signer">
 <kw type="setup" name="Login to rDocs" library="Common">
@@ -9,15 +9,15 @@
 <arg>https://abcrealty.stage.myrdocs.com</arg>
 <arg>firefox</arg>
 </arguments>
-<msg timestamp="20180301 10:48:32.479" level="INFO">Opening browser 'firefox' to base url 'https://abcrealty.stage.myrdocs.com'</msg>
-<status status="PASS" endtime="20180301 10:48:37.380" starttime="20180301 10:48:32.478"></status>
+<msg timestamp="20180301 11:03:50.178" level="INFO">Opening browser 'firefox' to base url 'https://abcrealty.stage.myrdocs.com'</msg>
+<status status="PASS" endtime="20180301 11:03:53.826" starttime="20180301 11:03:50.178"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Username</arg>
 </arguments>
-<status status="PASS" endtime="20180301 10:48:37.391" starttime="20180301 10:48:37.381"></status>
+<status status="PASS" endtime="20180301 11:03:53.837" starttime="20180301 11:03:53.827"></status>
 </kw>
 <kw name="Agent Login" library="Common">
 <kw name="Input Text" library="Selenium2Library">
@@ -26,8 +26,8 @@
 <arg>id=txtUserName</arg>
 <arg>agent.automation</arg>
 </arguments>
-<msg timestamp="20180301 10:48:37.392" level="INFO">Typing text 'agent.automation' into text field 'id=txtUserName'</msg>
-<status status="PASS" endtime="20180301 10:48:37.426" starttime="20180301 10:48:37.392"></status>
+<msg timestamp="20180301 11:03:53.838" level="INFO">Typing text 'agent.automation' into text field 'id=txtUserName'</msg>
+<status status="PASS" endtime="20180301 11:03:53.870" starttime="20180301 11:03:53.838"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -35,20 +35,20 @@
 <arg>id=txtPassword</arg>
 <arg>password123</arg>
 </arguments>
-<msg timestamp="20180301 10:48:37.426" level="INFO">Typing text 'password123' into text field 'id=txtPassword'</msg>
-<status status="PASS" endtime="20180301 10:48:37.450" starttime="20180301 10:48:37.426"></status>
+<msg timestamp="20180301 11:03:53.870" level="INFO">Typing text 'password123' into text field 'id=txtPassword'</msg>
+<status status="PASS" endtime="20180301 11:03:53.893" starttime="20180301 11:03:53.870"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:37.450" starttime="20180301 10:48:37.391"></status>
+<status status="PASS" endtime="20180301 11:03:53.893" starttime="20180301 11:03:53.837"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>id=btnLogin</arg>
 </arguments>
-<msg timestamp="20180301 10:48:37.451" level="INFO">Clicking button 'id=btnLogin'.</msg>
-<status status="PASS" endtime="20180301 10:48:41.082" starttime="20180301 10:48:37.451"></status>
+<msg timestamp="20180301 11:03:53.893" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" endtime="20180301 11:03:56.271" starttime="20180301 11:03:53.893"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:41.082" starttime="20180301 10:48:32.478"></status>
+<status status="PASS" endtime="20180301 11:03:56.271" starttime="20180301 11:03:50.178"></status>
 </kw>
 <kw name="Create Tile" library="Common">
 <kw name="Click Element" library="Selenium2Library">
@@ -56,18 +56,18 @@
 <arguments>
 <arg>id=MainContent_btnCreateNew</arg>
 </arguments>
-<msg timestamp="20180301 10:48:41.083" level="INFO">Clicking element 'id=MainContent_btnCreateNew'.</msg>
-<status status="PASS" endtime="20180301 10:48:42.240" starttime="20180301 10:48:41.083"></status>
+<msg timestamp="20180301 11:03:56.272" level="INFO">Clicking element 'id=MainContent_btnCreateNew'.</msg>
+<status status="PASS" endtime="20180301 11:03:57.316" starttime="20180301 11:03:56.272"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:48:44.241" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:48:44.242" starttime="20180301 10:48:42.240"></status>
+<msg timestamp="20180301 11:03:59.317" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:03:59.317" starttime="20180301 11:03:57.316"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:44.242" starttime="20180301 10:48:41.083"></status>
+<status status="PASS" endtime="20180301 11:03:59.317" starttime="20180301 11:03:56.272"></status>
 </kw>
 <kw name="Select Documents From Dashboard" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -75,18 +75,18 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlDocsBadge_0"]/div/span[2]/a</arg>
 </arguments>
-<msg timestamp="20180301 10:48:44.243" level="INFO">Clicking element 'xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlDocsBadge_0"]/div/span[2]/a'.</msg>
-<status status="PASS" endtime="20180301 10:48:44.770" starttime="20180301 10:48:44.243"></status>
+<msg timestamp="20180301 11:03:59.318" level="INFO">Clicking element 'xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlDocsBadge_0"]/div/span[2]/a'.</msg>
+<status status="PASS" endtime="20180301 11:04:00.821" starttime="20180301 11:03:59.318"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:48:46.771" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:48:46.771" starttime="20180301 10:48:44.770"></status>
+<msg timestamp="20180301 11:04:02.824" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:02.824" starttime="20180301 11:04:00.821"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:46.771" starttime="20180301 10:48:44.242"></status>
+<status status="PASS" endtime="20180301 11:04:02.824" starttime="20180301 11:03:59.317"></status>
 </kw>
 <kw name="Select Add Documents Button" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -94,25 +94,25 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_pnlAddDocs"]/div/a</arg>
 </arguments>
-<msg timestamp="20180301 10:48:46.772" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlAddDocs"]/div/a'.</msg>
-<status status="PASS" endtime="20180301 10:48:47.017" starttime="20180301 10:48:46.772"></status>
+<msg timestamp="20180301 11:04:02.826" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlAddDocs"]/div/a'.</msg>
+<status status="PASS" endtime="20180301 11:04:03.066" starttime="20180301 11:04:02.825"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:48:49.019" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:48:49.020" starttime="20180301 10:48:47.017"></status>
+<msg timestamp="20180301 11:04:05.067" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:05.068" starttime="20180301 11:04:03.066"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>xpath=//*[@id="MainContent_pnlAddDocs"]/div/ul</arg>
 </arguments>
-<status status="PASS" endtime="20180301 10:48:49.042" starttime="20180301 10:48:49.020"></status>
+<status status="PASS" endtime="20180301 11:04:05.099" starttime="20180301 11:04:05.068"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:49.042" starttime="20180301 10:48:46.771"></status>
+<status status="PASS" endtime="20180301 11:04:05.099" starttime="20180301 11:04:02.825"></status>
 </kw>
 <kw name="Upload Documents By Browser" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -120,18 +120,18 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_btnUploadDocBrowserTop"]</arg>
 </arguments>
-<msg timestamp="20180301 10:48:49.043" level="INFO">Clicking element 'xpath=//*[@id="MainContent_btnUploadDocBrowserTop"]'.</msg>
-<status status="PASS" endtime="20180301 10:48:49.340" starttime="20180301 10:48:49.042"></status>
+<msg timestamp="20180301 11:04:05.100" level="INFO">Clicking element 'xpath=//*[@id="MainContent_btnUploadDocBrowserTop"]'.</msg>
+<status status="PASS" endtime="20180301 11:04:05.532" starttime="20180301 11:04:05.100"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:48:51.343" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:48:51.343" starttime="20180301 10:48:49.340"></status>
+<msg timestamp="20180301 11:04:07.533" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:07.533" starttime="20180301 11:04:05.532"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:51.344" starttime="20180301 10:48:49.042"></status>
+<status status="PASS" endtime="20180301 11:04:07.534" starttime="20180301 11:04:05.099"></status>
 </kw>
 <kw name="Upload Documents And Close" library="Documents">
 <kw name="Input Text" library="Selenium2Library">
@@ -140,8 +140,8 @@
 <arg>id=MainContent_UCUploadDocBrowser_txtDisplayName</arg>
 <arg>Datasheet</arg>
 </arguments>
-<msg timestamp="20180301 10:48:51.345" level="INFO">Typing text 'Datasheet' into text field 'id=MainContent_UCUploadDocBrowser_txtDisplayName'</msg>
-<status status="PASS" endtime="20180301 10:48:51.374" starttime="20180301 10:48:51.345"></status>
+<msg timestamp="20180301 11:04:07.535" level="INFO">Typing text 'Datasheet' into text field 'id=MainContent_UCUploadDocBrowser_txtDisplayName'</msg>
+<status status="PASS" endtime="20180301 11:04:07.570" starttime="20180301 11:04:07.535"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -149,8 +149,8 @@
 <arg>id=MainContent_UCUploadDocBrowser_TAUploadDocDescription</arg>
 <arg>This is a test</arg>
 </arguments>
-<msg timestamp="20180301 10:48:51.374" level="INFO">Typing text 'This is a test' into text field 'id=MainContent_UCUploadDocBrowser_TAUploadDocDescription'</msg>
-<status status="PASS" endtime="20180301 10:48:51.412" starttime="20180301 10:48:51.374"></status>
+<msg timestamp="20180301 11:04:07.570" level="INFO">Typing text 'This is a test' into text field 'id=MainContent_UCUploadDocBrowser_TAUploadDocDescription'</msg>
+<status status="PASS" endtime="20180301 11:04:07.622" starttime="20180301 11:04:07.570"></status>
 </kw>
 <kw name="Upload File" library="Documents">
 <kw name="Choose File" library="Selenium2Library">
@@ -159,35 +159,35 @@
 <arg>id=MainContent_UCUploadDocBrowser_fuFileUpload</arg>
 <arg>/Users/Work/Dropbox/github/FileTest/Datasheet.pdf</arg>
 </arguments>
-<status status="PASS" endtime="20180301 10:48:51.432" starttime="20180301 10:48:51.412"></status>
+<status status="PASS" endtime="20180301 11:04:07.646" starttime="20180301 11:04:07.623"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:51.432" starttime="20180301 10:48:51.412"></status>
+<status status="PASS" endtime="20180301 11:04:07.646" starttime="20180301 11:04:07.622"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:48:53.433" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:48:53.433" starttime="20180301 10:48:51.432"></status>
+<msg timestamp="20180301 11:04:09.647" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:09.647" starttime="20180301 11:04:07.647"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>id=MainContent_UCUploadDocBrowser_btnUploadClose</arg>
 </arguments>
-<msg timestamp="20180301 10:48:53.434" level="INFO">Clicking element 'id=MainContent_UCUploadDocBrowser_btnUploadClose'.</msg>
-<status status="PASS" endtime="20180301 10:48:54.582" starttime="20180301 10:48:53.434"></status>
+<msg timestamp="20180301 11:04:09.648" level="INFO">Clicking element 'id=MainContent_UCUploadDocBrowser_btnUploadClose'.</msg>
+<status status="PASS" endtime="20180301 11:04:10.679" starttime="20180301 11:04:09.648"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180301 10:48:59.583" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180301 10:48:59.583" starttime="20180301 10:48:54.583"></status>
+<msg timestamp="20180301 11:04:15.682" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:15.682" starttime="20180301 11:04:10.680"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:48:59.584" starttime="20180301 10:48:51.344"></status>
+<status status="PASS" endtime="20180301 11:04:15.682" starttime="20180301 11:04:07.534"></status>
 </kw>
 <kw name="eSigning Documents Apple Template And Signer" library="Documents">
 <kw name="Select First Documents" library="Documents">
@@ -196,18 +196,18 @@
 <arguments>
 <arg>id=MainContent_lvDocList_chkSelect_0</arg>
 </arguments>
-<msg timestamp="20180301 10:48:59.585" level="INFO">Clicking element 'id=MainContent_lvDocList_chkSelect_0'.</msg>
-<status status="PASS" endtime="20180301 10:48:59.830" starttime="20180301 10:48:59.585"></status>
+<msg timestamp="20180301 11:04:15.684" level="INFO">Clicking element 'id=MainContent_lvDocList_chkSelect_0'.</msg>
+<status status="PASS" endtime="20180301 11:04:15.932" starttime="20180301 11:04:15.684"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:00.831" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180301 10:49:00.831" starttime="20180301 10:48:59.830"></status>
+<msg timestamp="20180301 11:04:16.934" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180301 11:04:16.934" starttime="20180301 11:04:15.933"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:00.831" starttime="20180301 10:48:59.584"></status>
+<status status="PASS" endtime="20180301 11:04:16.935" starttime="20180301 11:04:15.683"></status>
 </kw>
 <kw name="Select Dropdown Work With Documents" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -215,18 +215,18 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a</arg>
 </arguments>
-<msg timestamp="20180301 10:49:00.832" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a'.</msg>
-<status status="PASS" endtime="20180301 10:49:01.079" starttime="20180301 10:49:00.832"></status>
+<msg timestamp="20180301 11:04:16.936" level="INFO">Clicking element 'xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a'.</msg>
+<status status="PASS" endtime="20180301 11:04:17.185" starttime="20180301 11:04:16.935"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:03.081" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:03.081" starttime="20180301 10:49:01.079"></status>
+<msg timestamp="20180301 11:04:19.187" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:19.188" starttime="20180301 11:04:17.186"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:03.082" starttime="20180301 10:49:00.831"></status>
+<status status="PASS" endtime="20180301 11:04:19.188" starttime="20180301 11:04:16.935"></status>
 </kw>
 <kw name="eSign Documents" library="Documents">
 <kw name="Click Element" library="Selenium2Library">
@@ -234,18 +234,18 @@
 <arguments>
 <arg>id=MainContent_pnlActionEsign</arg>
 </arguments>
-<msg timestamp="20180301 10:49:03.083" level="INFO">Clicking element 'id=MainContent_pnlActionEsign'.</msg>
-<status status="PASS" endtime="20180301 10:49:05.929" starttime="20180301 10:49:03.083"></status>
+<msg timestamp="20180301 11:04:19.189" level="INFO">Clicking element 'id=MainContent_pnlActionEsign'.</msg>
+<status status="PASS" endtime="20180301 11:04:21.913" starttime="20180301 11:04:19.189"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:15.932" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:15.933" starttime="20180301 10:49:05.930"></status>
+<msg timestamp="20180301 11:04:31.916" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:31.916" starttime="20180301 11:04:21.914"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:15.933" starttime="20180301 10:49:03.082"></status>
+<status status="PASS" endtime="20180301 11:04:31.916" starttime="20180301 11:04:19.188"></status>
 </kw>
 <kw name="Select eSign Frame" library="Esign">
 <kw name="Select Frame" library="Selenium2Library">
@@ -253,18 +253,18 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_UCEsign_frameEsign"]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:15.934" level="INFO">Selecting frame 'xpath=//*[@id="MainContent_UCEsign_frameEsign"]'.</msg>
-<status status="PASS" endtime="20180301 10:49:15.947" starttime="20180301 10:49:15.934"></status>
+<msg timestamp="20180301 11:04:31.918" level="INFO">Selecting frame 'xpath=//*[@id="MainContent_UCEsign_frameEsign"]'.</msg>
+<status status="PASS" endtime="20180301 11:04:31.936" starttime="20180301 11:04:31.917"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:17.949" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:17.949" starttime="20180301 10:49:15.947"></status>
+<msg timestamp="20180301 11:04:33.938" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:33.938" starttime="20180301 11:04:31.936"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:17.949" starttime="20180301 10:49:15.933"></status>
+<status status="PASS" endtime="20180301 11:04:33.938" starttime="20180301 11:04:31.917"></status>
 </kw>
 <kw name="Step 1 eSign Create Session" library="Esign">
 <kw name="Add Session Title" library="Esign">
@@ -274,8 +274,8 @@
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sessionTitle"]</arg>
 <arg>rDocs eSign Automation</arg>
 </arguments>
-<msg timestamp="20180301 10:49:17.951" level="INFO">Typing text 'rDocs eSign Automation' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sessionTitle"]'</msg>
-<status status="PASS" endtime="20180301 10:49:17.996" starttime="20180301 10:49:17.951"></status>
+<msg timestamp="20180301 11:04:33.940" level="INFO">Typing text 'rDocs eSign Automation' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sessionTitle"]'</msg>
+<status status="PASS" endtime="20180301 11:04:33.988" starttime="20180301 11:04:33.939"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -283,10 +283,10 @@
 <arg>xpath=//*[@id="sessionDescriptionHidden"]</arg>
 <arg>This is a test</arg>
 </arguments>
-<msg timestamp="20180301 10:49:17.997" level="INFO">Typing text 'This is a test' into text field 'xpath=//*[@id="sessionDescriptionHidden"]'</msg>
-<status status="PASS" endtime="20180301 10:49:18.024" starttime="20180301 10:49:17.996"></status>
+<msg timestamp="20180301 11:04:33.988" level="INFO">Typing text 'This is a test' into text field 'xpath=//*[@id="sessionDescriptionHidden"]'</msg>
+<status status="PASS" endtime="20180301 11:04:34.041" starttime="20180301 11:04:33.988"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:18.024" starttime="20180301 10:49:17.950"></status>
+<status status="PASS" endtime="20180301 11:04:34.041" starttime="20180301 11:04:33.939"></status>
 </kw>
 <kw name="Step 1 Next" library="Esign">
 <kw name="Click Element" library="Selenium2Library">
@@ -294,20 +294,20 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_nextImg"]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:18.025" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_nextImg"]'.</msg>
-<status status="PASS" endtime="20180301 10:49:18.887" starttime="20180301 10:49:18.025"></status>
+<msg timestamp="20180301 11:04:34.042" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_nextImg"]'.</msg>
+<status status="PASS" endtime="20180301 11:04:34.973" starttime="20180301 11:04:34.042"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:21.889" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:21.889" starttime="20180301 10:49:18.888"></status>
+<msg timestamp="20180301 11:04:37.975" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:37.976" starttime="20180301 11:04:34.973"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:21.890" starttime="20180301 10:49:18.024"></status>
+<status status="PASS" endtime="20180301 11:04:37.976" starttime="20180301 11:04:34.041"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:21.890" starttime="20180301 10:49:17.950"></status>
+<status status="PASS" endtime="20180301 11:04:37.976" starttime="20180301 11:04:33.938"></status>
 </kw>
 <kw name="Step 2 eSign Add Signers" library="Esign">
 <kw name="Add Signers Icon" library="Esign">
@@ -316,18 +316,18 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl00_lbInsert"]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:21.891" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl00_lbInsert"]'.</msg>
-<status status="PASS" endtime="20180301 10:49:22.126" starttime="20180301 10:49:21.891"></status>
+<msg timestamp="20180301 11:04:37.978" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl00_lbInsert"]'.</msg>
+<status status="PASS" endtime="20180301 11:04:38.222" starttime="20180301 11:04:37.977"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:22.127" starttime="20180301 10:49:21.891"></status>
+<status status="PASS" endtime="20180301 11:04:38.222" starttime="20180301 11:04:37.977"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:27.130" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:27.130" starttime="20180301 10:49:22.127"></status>
+<msg timestamp="20180301 11:04:43.223" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:43.223" starttime="20180301 11:04:38.223"></status>
 </kw>
 <kw name="Add Signers" library="Esign">
 <kw name="Input Text" library="Selenium2Library">
@@ -336,8 +336,8 @@
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_txtFirstName"]</arg>
 <arg>John</arg>
 </arguments>
-<msg timestamp="20180301 10:49:27.131" level="INFO">Typing text 'John' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_txtFirstName"]'</msg>
-<status status="PASS" endtime="20180301 10:49:27.162" starttime="20180301 10:49:27.131"></status>
+<msg timestamp="20180301 11:04:43.224" level="INFO">Typing text 'John' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_txtFirstName"]'</msg>
+<status status="PASS" endtime="20180301 11:04:43.266" starttime="20180301 11:04:43.224"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -345,8 +345,8 @@
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_txtLastName"]</arg>
 <arg>Awesome</arg>
 </arguments>
-<msg timestamp="20180301 10:49:27.162" level="INFO">Typing text 'Awesome' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_txtLastName"]'</msg>
-<status status="PASS" endtime="20180301 10:49:27.198" starttime="20180301 10:49:27.162"></status>
+<msg timestamp="20180301 11:04:43.266" level="INFO">Typing text 'Awesome' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_txtLastName"]'</msg>
+<status status="PASS" endtime="20180301 11:04:43.306" starttime="20180301 11:04:43.266"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -354,26 +354,26 @@
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_emailAddress"]</arg>
 <arg>jngoqa2@gmail.com</arg>
 </arguments>
-<msg timestamp="20180301 10:49:27.198" level="INFO">Typing text 'jngoqa2@gmail.com' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_emailAddress"]'</msg>
-<status status="PASS" endtime="20180301 10:49:27.244" starttime="20180301 10:49:27.198"></status>
+<msg timestamp="20180301 11:04:43.307" level="INFO">Typing text 'jngoqa2@gmail.com' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_emailAddress"]'</msg>
+<status status="PASS" endtime="20180301 11:04:43.353" starttime="20180301 11:04:43.306"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_okButton"]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:27.245" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_okButton"]'.</msg>
-<status status="PASS" endtime="20180301 10:49:27.490" starttime="20180301 10:49:27.245"></status>
+<msg timestamp="20180301 11:04:43.353" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_okButton"]'.</msg>
+<status status="PASS" endtime="20180301 11:04:43.591" starttime="20180301 11:04:43.353"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:32.492" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:32.493" starttime="20180301 10:49:27.490"></status>
+<msg timestamp="20180301 11:04:48.593" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:48.593" starttime="20180301 11:04:43.592"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:32.493" starttime="20180301 10:49:27.130"></status>
+<status status="PASS" endtime="20180301 11:04:48.593" starttime="20180301 11:04:43.224"></status>
 </kw>
 <kw name="Step 2 Next" library="Esign">
 <kw name="Click Element" library="Selenium2Library">
@@ -381,20 +381,20 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img</arg>
 </arguments>
-<msg timestamp="20180301 10:49:32.494" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img'.</msg>
-<status status="PASS" endtime="20180301 10:49:32.734" starttime="20180301 10:49:32.494"></status>
+<msg timestamp="20180301 11:04:48.595" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img'.</msg>
+<status status="PASS" endtime="20180301 11:04:49.449" starttime="20180301 11:04:48.594"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:35.735" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:35.735" starttime="20180301 10:49:32.734"></status>
+<msg timestamp="20180301 11:04:52.452" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:52.453" starttime="20180301 11:04:49.450"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:35.736" starttime="20180301 10:49:32.493"></status>
+<status status="PASS" endtime="20180301 11:04:52.453" starttime="20180301 11:04:48.594"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:35.736" starttime="20180301 10:49:21.890"></status>
+<status status="PASS" endtime="20180301 11:04:52.453" starttime="20180301 11:04:37.976"></status>
 </kw>
 <kw name="Apply Template Icon" library="Esign">
 <kw name="Click Image" library="Selenium2Library">
@@ -402,18 +402,18 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00__0"]/td[9]/div/a[1]/img</arg>
 </arguments>
-<msg timestamp="20180301 10:49:35.737" level="INFO">Clicking image 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00__0"]/td[9]/div/a[1]/img'.</msg>
-<status status="PASS" endtime="20180301 10:49:35.996" starttime="20180301 10:49:35.737"></status>
+<msg timestamp="20180301 11:04:52.454" level="INFO">Clicking image 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00__0"]/td[9]/div/a[1]/img'.</msg>
+<status status="PASS" endtime="20180301 11:04:52.731" starttime="20180301 11:04:52.454"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:39.999" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:39.999" starttime="20180301 10:49:35.996"></status>
+<msg timestamp="20180301 11:04:56.733" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:56.733" starttime="20180301 11:04:52.731"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:39.999" starttime="20180301 10:49:35.736"></status>
+<status status="PASS" endtime="20180301 11:04:56.733" starttime="20180301 11:04:52.453"></status>
 </kw>
 <kw name="Step 3 Assigning Template" library="Esign">
 <kw name="eSign Add Package Frame" library="Esign">
@@ -422,18 +422,18 @@
 <arguments>
 <arg>xpath=//*[@id="RadWindowWrapper_ctl00_ContentPlaceHolder1_sDocuments_AddPackage"]/table/tbody/tr[2]/td[2]/iframe\</arg>
 </arguments>
-<msg timestamp="20180301 10:49:40.001" level="INFO">Selecting frame 'xpath=//*[@id="RadWindowWrapper_ctl00_ContentPlaceHolder1_sDocuments_AddPackage"]/table/tbody/tr[2]/td[2]/iframe'.</msg>
-<status status="PASS" endtime="20180301 10:49:40.011" starttime="20180301 10:49:40.001"></status>
+<msg timestamp="20180301 11:04:56.735" level="INFO">Selecting frame 'xpath=//*[@id="RadWindowWrapper_ctl00_ContentPlaceHolder1_sDocuments_AddPackage"]/table/tbody/tr[2]/td[2]/iframe'.</msg>
+<status status="PASS" endtime="20180301 11:04:56.753" starttime="20180301 11:04:56.735"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:42.012" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:42.012" starttime="20180301 10:49:40.011"></status>
+<msg timestamp="20180301 11:04:58.754" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:04:58.754" starttime="20180301 11:04:56.753"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:42.012" starttime="20180301 10:49:40.000"></status>
+<status status="PASS" endtime="20180301 11:04:58.755" starttime="20180301 11:04:56.734"></status>
 </kw>
 <kw name="Select Template" library="Esign">
 <kw name="Click Element" library="Selenium2Library">
@@ -441,18 +441,18 @@
 <arguments>
 <arg>xpath=//*[@id="packagetoadd_ctl00_ctl05_columnSelectCheckBox"]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:42.013" level="INFO">Clicking element 'xpath=//*[@id="packagetoadd_ctl00_ctl05_columnSelectCheckBox"]'.</msg>
-<status status="PASS" endtime="20180301 10:49:42.259" starttime="20180301 10:49:42.013"></status>
+<msg timestamp="20180301 11:04:58.756" level="INFO">Clicking element 'xpath=//*[@id="packagetoadd_ctl00_ctl05_columnSelectCheckBox"]'.</msg>
+<status status="PASS" endtime="20180301 11:04:59.028" starttime="20180301 11:04:58.756"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:43.260" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180301 10:49:43.260" starttime="20180301 10:49:42.259"></status>
+<msg timestamp="20180301 11:05:00.029" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180301 11:05:00.030" starttime="20180301 11:04:59.028"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:43.261" starttime="20180301 10:49:42.012"></status>
+<status status="PASS" endtime="20180301 11:05:00.030" starttime="20180301 11:04:58.755"></status>
 </kw>
 <kw name="Apply Template Next" library="Esign">
 <kw name="Click Element" library="Selenium2Library">
@@ -460,28 +460,28 @@
 <arguments>
 <arg>xpath=//*[@id="btn_save"]/img</arg>
 </arguments>
-<msg timestamp="20180301 10:49:43.262" level="INFO">Clicking element 'xpath=//*[@id="btn_save"]/img'.</msg>
-<status status="PASS" endtime="20180301 10:49:43.474" starttime="20180301 10:49:43.261"></status>
+<msg timestamp="20180301 11:05:00.031" level="INFO">Clicking element 'xpath=//*[@id="btn_save"]/img'.</msg>
+<status status="PASS" endtime="20180301 11:05:00.289" starttime="20180301 11:05:00.031"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:46.475" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:46.475" starttime="20180301 10:49:43.474"></status>
+<msg timestamp="20180301 11:05:03.291" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:03.291" starttime="20180301 11:05:00.290"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:46.475" starttime="20180301 10:49:43.261"></status>
+<status status="PASS" endtime="20180301 11:05:03.291" starttime="20180301 11:05:00.030"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:48.476" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:48.476" starttime="20180301 10:49:46.475"></status>
+<msg timestamp="20180301 11:05:05.293" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:05.293" starttime="20180301 11:05:03.292"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:48.476" starttime="20180301 10:49:40.000"></status>
+<status status="PASS" endtime="20180301 11:05:05.294" starttime="20180301 11:04:56.734"></status>
 </kw>
 <kw name="Step 3 Assigning Signer" library="Esign">
 <kw name="Select Designate Signers" library="Esign">
@@ -490,42 +490,42 @@
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:51.478" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:51.479" starttime="20180301 10:49:48.477"></status>
+<msg timestamp="20180301 11:05:08.297" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:08.297" starttime="20180301 11:05:05.295"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_Arrow"]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:51.479" level="INFO">Clicking element 'xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_Arrow"]'.</msg>
-<status status="PASS" endtime="20180301 10:49:51.730" starttime="20180301 10:49:51.479"></status>
+<msg timestamp="20180301 11:05:08.297" level="INFO">Clicking element 'xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_Arrow"]'.</msg>
+<status status="PASS" endtime="20180301 11:05:08.550" starttime="20180301 11:05:08.297"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:53.733" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:53.733" starttime="20180301 10:49:51.731"></status>
+<msg timestamp="20180301 11:05:10.552" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:10.552" starttime="20180301 11:05:08.550"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_DropDown"]/div/ul/li[2]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:53.733" level="INFO">Clicking element 'xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_DropDown"]/div/ul/li[2]'.</msg>
-<status status="PASS" endtime="20180301 10:49:53.966" starttime="20180301 10:49:53.733"></status>
+<msg timestamp="20180301 11:05:10.552" level="INFO">Clicking element 'xpath=//*[@id="packagetoadd_ctl00_ctl04_assignedtoid_DropDown"]/div/ul/li[2]'.</msg>
+<status status="PASS" endtime="20180301 11:05:10.796" starttime="20180301 11:05:10.552"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:55.967" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:55.967" starttime="20180301 10:49:53.966"></status>
+<msg timestamp="20180301 11:05:12.798" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:12.798" starttime="20180301 11:05:10.797"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:55.968" starttime="20180301 10:49:48.477"></status>
+<status status="PASS" endtime="20180301 11:05:12.798" starttime="20180301 11:05:05.295"></status>
 </kw>
 <kw name="Designate Signers Next" library="Esign">
 <kw name="Click Element" library="Selenium2Library">
@@ -533,32 +533,32 @@
 <arguments>
 <arg>xpath=//*[@id="HyperLink1"]</arg>
 </arguments>
-<msg timestamp="20180301 10:49:55.969" level="INFO">Clicking element 'xpath=//*[@id="HyperLink1"]'.</msg>
-<status status="PASS" endtime="20180301 10:49:56.259" starttime="20180301 10:49:55.969"></status>
+<msg timestamp="20180301 11:05:12.799" level="INFO">Clicking element 'xpath=//*[@id="HyperLink1"]'.</msg>
+<status status="PASS" endtime="20180301 11:05:13.064" starttime="20180301 11:05:12.799"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:49:59.261" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:49:59.261" starttime="20180301 10:49:56.259"></status>
+<msg timestamp="20180301 11:05:16.065" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:16.065" starttime="20180301 11:05:13.064"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:49:59.262" starttime="20180301 10:49:55.968"></status>
+<status status="PASS" endtime="20180301 11:05:16.065" starttime="20180301 11:05:12.799"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:02.264" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:02.265" starttime="20180301 10:49:59.262"></status>
+<msg timestamp="20180301 11:05:19.067" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:19.067" starttime="20180301 11:05:16.065"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:02.265" starttime="20180301 10:49:48.477"></status>
+<status status="PASS" endtime="20180301 11:05:19.067" starttime="20180301 11:05:05.294"></status>
 </kw>
 <kw name="Unselect Frame" library="Selenium2Library">
 <doc>Sets the top frame as the current frame.</doc>
-<status status="PASS" endtime="20180301 10:50:02.271" starttime="20180301 10:50:02.265"></status>
+<status status="PASS" endtime="20180301 11:05:19.073" starttime="20180301 11:05:19.068"></status>
 </kw>
 <kw name="Select eSign Frame" library="Esign">
 <kw name="Select Frame" library="Selenium2Library">
@@ -566,18 +566,18 @@
 <arguments>
 <arg>xpath=//*[@id="MainContent_UCEsign_frameEsign"]</arg>
 </arguments>
-<msg timestamp="20180301 10:50:02.272" level="INFO">Selecting frame 'xpath=//*[@id="MainContent_UCEsign_frameEsign"]'.</msg>
-<status status="PASS" endtime="20180301 10:50:02.281" starttime="20180301 10:50:02.271"></status>
+<msg timestamp="20180301 11:05:19.074" level="INFO">Selecting frame 'xpath=//*[@id="MainContent_UCEsign_frameEsign"]'.</msg>
+<status status="PASS" endtime="20180301 11:05:19.084" starttime="20180301 11:05:19.074"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:04.283" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:04.283" starttime="20180301 10:50:02.282"></status>
+<msg timestamp="20180301 11:05:21.085" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:21.085" starttime="20180301 11:05:19.084"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:04.283" starttime="20180301 10:50:02.271"></status>
+<status status="PASS" endtime="20180301 11:05:21.086" starttime="20180301 11:05:19.074"></status>
 </kw>
 <kw name="Step 3 Next" library="Esign">
 <kw name="Click Element" library="Selenium2Library">
@@ -585,18 +585,18 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img</arg>
 </arguments>
-<msg timestamp="20180301 10:50:04.284" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img'.</msg>
-<status status="PASS" endtime="20180301 10:50:04.523" starttime="20180301 10:50:04.284"></status>
+<msg timestamp="20180301 11:05:21.087" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img'.</msg>
+<status status="PASS" endtime="20180301 11:05:21.829" starttime="20180301 11:05:21.087"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:07.524" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:07.524" starttime="20180301 10:50:04.523"></status>
+<msg timestamp="20180301 11:05:24.832" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:24.832" starttime="20180301 11:05:21.829"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:07.525" starttime="20180301 10:50:04.283"></status>
+<status status="PASS" endtime="20180301 11:05:24.833" starttime="20180301 11:05:21.086"></status>
 </kw>
 <kw name="Step 4 Next" library="Esign">
 <kw name="Click Element" library="Selenium2Library">
@@ -604,18 +604,18 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]</arg>
 </arguments>
-<msg timestamp="20180301 10:50:07.526" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]'.</msg>
-<status status="PASS" endtime="20180301 10:50:07.896" starttime="20180301 10:50:07.525"></status>
+<msg timestamp="20180301 11:05:24.834" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]'.</msg>
+<status status="PASS" endtime="20180301 11:05:25.228" starttime="20180301 11:05:24.833"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:10.897" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:10.897" starttime="20180301 10:50:07.896"></status>
+<msg timestamp="20180301 11:05:28.230" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:28.230" starttime="20180301 11:05:25.228"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:10.897" starttime="20180301 10:50:07.525"></status>
+<status status="PASS" endtime="20180301 11:05:28.230" starttime="20180301 11:05:24.833"></status>
 </kw>
 <kw name="Step 5 eSign Review Templates" library="Esign">
 <kw name="Step 5 Next" library="Esign">
@@ -624,20 +624,20 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]</arg>
 </arguments>
-<msg timestamp="20180301 10:50:10.899" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]'.</msg>
-<status status="PASS" endtime="20180301 10:50:11.839" starttime="20180301 10:50:10.898"></status>
+<msg timestamp="20180301 11:05:28.231" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]'.</msg>
+<status status="PASS" endtime="20180301 11:05:29.301" starttime="20180301 11:05:28.231"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:14.841" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:14.841" starttime="20180301 10:50:11.839"></status>
+<msg timestamp="20180301 11:05:32.302" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:32.302" starttime="20180301 11:05:29.301"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:14.841" starttime="20180301 10:50:10.898"></status>
+<status status="PASS" endtime="20180301 11:05:32.303" starttime="20180301 11:05:28.231"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:14.842" starttime="20180301 10:50:10.898"></status>
+<status status="PASS" endtime="20180301 11:05:32.303" starttime="20180301 11:05:28.231"></status>
 </kw>
 <kw name="Step 6 eSign Confirm" library="Esign">
 <kw name="Step 6 Next" library="Esign">
@@ -646,45 +646,56 @@
 <arguments>
 <arg>xpath=//*[@id="ctl00_ContentPlaceHolder1_fnshImg"]</arg>
 </arguments>
-<msg timestamp="20180301 10:50:14.843" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_fnshImg"]'.</msg>
-<status status="PASS" endtime="20180301 10:50:15.087" starttime="20180301 10:50:14.843"></status>
+<msg timestamp="20180301 11:05:32.304" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_fnshImg"]'.</msg>
+<status status="PASS" endtime="20180301 11:05:32.553" starttime="20180301 11:05:32.304"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:25.089" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:25.089" starttime="20180301 10:50:15.088"></status>
+<msg timestamp="20180301 11:05:42.554" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:42.554" starttime="20180301 11:05:32.553"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:25.089" starttime="20180301 10:50:14.842"></status>
+<status status="PASS" endtime="20180301 11:05:42.555" starttime="20180301 11:05:32.304"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:25.089" starttime="20180301 10:50:14.842"></status>
+<status status="PASS" endtime="20180301 11:05:42.555" starttime="20180301 11:05:32.303"></status>
 </kw>
 <kw name="Close eSign Modal" library="Esign">
 <kw name="Unselect Frame" library="Selenium2Library">
 <doc>Sets the top frame as the current frame.</doc>
-<status status="PASS" endtime="20180301 10:50:25.095" starttime="20180301 10:50:25.090"></status>
+<status status="PASS" endtime="20180301 11:05:42.561" starttime="20180301 11:05:42.556"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="MainContent_UCEsign_btnXCancel"]</arg>
 </arguments>
-<msg timestamp="20180301 10:50:25.096" level="INFO">Clicking element 'xpath=//*[@id="MainContent_UCEsign_btnXCancel"]'.</msg>
-<status status="PASS" endtime="20180301 10:50:25.504" starttime="20180301 10:50:25.096"></status>
+<msg timestamp="20180301 11:05:42.561" level="INFO">Clicking element 'xpath=//*[@id="MainContent_UCEsign_btnXCancel"]'.</msg>
+<status status="PASS" endtime="20180301 11:05:43.102" starttime="20180301 11:05:42.561"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:35.505" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:35.505" starttime="20180301 10:50:25.504"></status>
+<msg timestamp="20180301 11:05:53.105" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:53.106" starttime="20180301 11:05:43.102"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:35.505" starttime="20180301 10:50:25.090"></status>
+<status status="PASS" endtime="20180301 11:05:53.106" starttime="20180301 11:05:42.555"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:35.506" starttime="20180301 10:48:59.584"></status>
+<status status="PASS" endtime="20180301 11:05:53.106" starttime="20180301 11:04:15.683"></status>
+</kw>
+<kw name="Back To Dashboard" library="Common">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>xpath=//*[@id="pnlReturnToDashboard"]/div/a</arg>
+</arguments>
+<msg timestamp="20180301 11:05:53.107" level="INFO">Clicking link 'xpath=//*[@id="pnlReturnToDashboard"]/div/a'.</msg>
+<status status="PASS" endtime="20180301 11:05:54.687" starttime="20180301 11:05:53.107"></status>
+</kw>
+<status status="PASS" endtime="20180301 11:05:54.687" starttime="20180301 11:05:53.107"></status>
 </kw>
 <kw type="teardown" name="Logout rDocs" library="Common">
 <kw name="Sleep" library="BuiltIn">
@@ -692,8 +703,8 @@
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:38.509" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:38.509" starttime="20180301 10:50:35.507"></status>
+<msg timestamp="20180301 11:05:57.688" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:05:57.689" starttime="20180301 11:05:54.688"></status>
 </kw>
 <kw name="Select Dropdown" library="Dropdown">
 <kw name="Click Element" library="Selenium2Library">
@@ -701,25 +712,25 @@
 <arguments>
 <arg>xpath=//*[@id="pnlDateMenu"]/div/div/a</arg>
 </arguments>
-<msg timestamp="20180301 10:50:38.510" level="INFO">Clicking element 'xpath=//*[@id="pnlDateMenu"]/div/div/a'.</msg>
-<status status="PASS" endtime="20180301 10:50:38.769" starttime="20180301 10:50:38.510"></status>
+<msg timestamp="20180301 11:05:57.690" level="INFO">Clicking element 'xpath=//*[@id="pnlDateMenu"]/div/div/a'.</msg>
+<status status="PASS" endtime="20180301 11:05:57.931" starttime="20180301 11:05:57.690"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20180301 10:50:41.770" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20180301 10:50:41.770" starttime="20180301 10:50:38.769"></status>
+<msg timestamp="20180301 11:06:00.932" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180301 11:06:00.933" starttime="20180301 11:05:57.932"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>xpath=//*[@id="pnlDateMenu"]/div/div/ul</arg>
 </arguments>
-<status status="PASS" endtime="20180301 10:50:41.827" starttime="20180301 10:50:41.771"></status>
+<status status="PASS" endtime="20180301 11:06:00.948" starttime="20180301 11:06:00.933"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:41.827" starttime="20180301 10:50:38.510"></status>
+<status status="PASS" endtime="20180301 11:06:00.948" starttime="20180301 11:05:57.689"></status>
 </kw>
 <kw name="Select Logout" library="Dropdown">
 <kw name="Click Element" library="Selenium2Library">
@@ -727,21 +738,22 @@
 <arguments>
 <arg>id=btnLogout</arg>
 </arguments>
-<msg timestamp="20180301 10:50:41.828" level="INFO">Clicking element 'id=btnLogout'.</msg>
-<status status="PASS" endtime="20180301 10:50:42.101" starttime="20180301 10:50:41.827"></status>
+<msg timestamp="20180301 11:06:00.949" level="INFO">Clicking element 'id=btnLogout'.</msg>
+<status status="PASS" endtime="20180301 11:06:01.269" starttime="20180301 11:06:00.948"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:42.101" starttime="20180301 10:50:41.827"></status>
+<status status="PASS" endtime="20180301 11:06:01.269" starttime="20180301 11:06:00.948"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180301 10:50:42.251" starttime="20180301 10:50:42.102"></status>
+<status status="PASS" endtime="20180301 11:06:01.487" starttime="20180301 11:06:01.269"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:42.251" starttime="20180301 10:50:35.506"></status>
+<status status="PASS" endtime="20180301 11:06:01.487" starttime="20180301 11:05:54.687"></status>
 </kw>
-<status status="PASS" endtime="20180301 10:50:42.251" critical="yes" starttime="20180301 10:48:32.477"></status>
+<doc>Test eSign Without Contacts In Tile, Apply Template and Apple Signer to Signature</doc>
+<status status="PASS" endtime="20180301 11:06:01.488" critical="yes" starttime="20180301 11:03:50.177"></status>
 </test>
 <doc>rDocs Test</doc>
-<status status="PASS" endtime="20180301 10:50:42.252" starttime="20180301 10:48:32.338"></status>
+<status status="PASS" endtime="20180301 11:06:01.489" starttime="20180301 11:03:50.037"></status>
 </suite>
 <statistics>
 <total>
