@@ -23,6 +23,7 @@ Logout rDocs
     Sleep  3s
     Dropdown.Select Dropdown
     Dropdown.Select Logout
+    Wait Until Page Contains  Username
     Close Browser
 
 Create Tile

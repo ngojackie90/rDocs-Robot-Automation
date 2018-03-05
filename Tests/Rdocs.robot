@@ -6,7 +6,7 @@ Resource  ../Resources/PO/Contact.robot
 Resource  ../Resources/PO/Property.robot
 Resource  ../Resources/PO/Documents.robot
 Resource  ../Resources/PO/Esign.robot
-
+Resource  ../Resources/PO/Checklist.robot
 
 
 #(Test Entire Suite) pybot -d results tests/rdocs.robot
@@ -149,6 +149,11 @@ Documents eSign Assign Template And Signer
     Documents.Upload Documents And Close
     Documents.eSigning Documents Apple Template And Signer
     Common.Back To Dashboard
+
+#------ Checklist ---------
+Creating Checklist
+    Checklist.Create Checklist
+
 
 
 Dashboard eSign  #Look Back Later
