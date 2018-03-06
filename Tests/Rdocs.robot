@@ -153,7 +153,14 @@ Documents eSign Assign Template And Signer
 #------ Checklist ---------
 Creating Checklist
     Checklist.Create Checklist
-
+    #Checklist.Delete First Checklist
+    Checklist.Go To First Checklist Task
+    Checklist.Add Task To First Checklist
+    Checklist.Associate Required Documents To First Task First Checklist
+    Checklist.Delete First Task
+    Checklist.Return To Checklist
+    Checklist.Delete First Checklist
+    Common.Back To Dashboard
 
 
 Dashboard eSign  #Look Back Later
