@@ -1,597 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180305 12:10:18.070" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
-<suite source="/Users/Work/PycharmProjects/rDocs/tests/API_Tests.robot" id="s1" name="API Tests">
+<robot generated="20180306 16:34:07.016" generator="Robot 3.0.2 (Python 2.7.14 on darwin)">
+<suite source="/Users/Work/PycharmProjects/rDocs/tests/api_tests.robot" id="s1" name="Api Tests">
 <test id="s1-t1" name="Test">
-<kw name="Load Json" library="Rdocs_API">
-<kw name="Get File" library="OperatingSystem">
-<doc>Returns the contents of a specified file.</doc>
+<kw name="Test" library="Rdocs_API">
+<kw name="Create Http Context" library="HttpLibrary.HTTP">
+<doc>Sets the HTTP host to use for future requests. You must call this</doc>
 <arguments>
-<arg>/Users/Work/Desktop/api.stage.myrdocs.com.postman_collection.json</arg>
+<arg>api.stage.myrdocs.com</arg>
+<arg>http</arg>
+</arguments>
+<msg timestamp="20180306 16:34:07.182" level="INFO">Host for next HTTP request set to 'api.stage.myrdocs.com'</msg>
+<msg timestamp="20180306 16:34:07.182" level="INFO">Scheme for next HTTP request set to 'http'</msg>
+<status status="PASS" endtime="20180306 16:34:07.182" starttime="20180306 16:34:07.182"></status>
+</kw>
+<kw name="Set Request Header" library="HttpLibrary.HTTP">
+<doc>Sets a request header for the next request.</doc>
+<arguments>
+<arg>apiKey</arg>
+<arg>F16F4A4F-DDD6-44F4-87B5-1976B6FA9073</arg>
+</arguments>
+<msg timestamp="20180306 16:34:07.183" level="INFO">Set request header "apiKey" to "F16F4A4F-DDD6-44F4-87B5-1976B6FA9073"</msg>
+<status status="PASS" endtime="20180306 16:34:07.183" starttime="20180306 16:34:07.183"></status>
+</kw>
+<kw name="Set Request Header" library="HttpLibrary.HTTP">
+<doc>Sets a request header for the next request.</doc>
+<arguments>
+<arg>Content-Type</arg>
+<arg>application/json</arg>
+</arguments>
+<msg timestamp="20180306 16:34:07.183" level="INFO">Set request header "Content-Type" to "application/json"</msg>
+<status status="PASS" endtime="20180306 16:34:07.183" starttime="20180306 16:34:07.183"></status>
+</kw>
+<kw name="Set Json Value" library="HttpLibrary.HTTP">
+<doc>Set the target node of the JSON document `json_string` specified by</doc>
+<arguments>
+<arg>{"userName": "jngo"</arg>
+<arg>"password": "aaaa"</arg>
+<arg>"externalId": ""</arg>
+<arg>"siteName": "abcrealty"}</arg>
 </arguments>
 <assign>
-<var>${json}</var>
+<var>${result}</var>
 </assign>
-<msg timestamp="20180305 12:10:18.310" html="yes" level="INFO">Getting file '&lt;a href="file:///Users/Work/Desktop/api.stage.myrdocs.com.postman_collection.json"&gt;/Users/Work/Desktop/api.stage.myrdocs.com.postman_collection.json&lt;/a&gt;'.</msg>
-<msg timestamp="20180305 12:10:18.310" level="INFO">${json} = {
-	"owner": "3168102",
-	"lastUpdatedBy": "3168102",
-	"lastRevision": 2604716083,
-	"team": null,
-	"id": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-	"name": "api.stage.myrdocs.com",
-	"description": "",
-	"f...</msg>
-<status status="PASS" endtime="20180305 12:10:18.310" starttime="20180305 12:10:18.309"></status>
+<msg timestamp="20180306 16:34:07.184" level="FAIL">ValueError: Could not parse '{"userName": "jngo"' as JSON: Expecting object: line 1 column 19 (char 18)</msg>
+<status status="FAIL" endtime="20180306 16:34:07.184" starttime="20180306 16:34:07.183"></status>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
-<doc>Evaluates the given expression in Python and returns the results.</doc>
-<arguments>
-<arg>json.loads('''${json}''')</arg>
-<arg>json</arg>
-</arguments>
-<assign>
-<var>${object}</var>
-</assign>
-<msg timestamp="20180305 12:10:18.313" level="FAIL">Evaluating expression 'json.loads('''{
-	"owner": "3168102",
-	"lastUpdatedBy": "3168102",
-	"lastRevision": 2604716083,
-	"team": null,
-	"id": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-	"name": "api.stage.myrdocs.com",
-	"description": "",
-	"folders_order": [],
-	"order": [
-		"021c37d2-1d9a-db24-d4a7-c6546344bcc8",
-		"0c8e8a8d-61ba-0552-942e-1da851a4b438",
-		"13b7f0b0-cc39-5e74-6eff-64ae747699e8",
-		"16429186-4c39-3326-f80c-d3da58574b01",
-		"220705f8-4e0d-ebd4-4a0f-397a816c3ef0",
-		"2c8007a8-c05f-54fe-a9fe-066ec08f668d",
-		"2ccb5ace-962a-6ac1-cdaf-ac34a7b41efc",
-		"3e5b0937-51fe-182c-1cc3-30fd02cc65a3",
-		"4f04bff6-e395-33fe-ca96-fec6929f8f90",
-		"5aa65b25-9da2-fcb8-05cc-75dec74bcf08",
-		"655c367e-917a-5af7-b513-d0785b86bba8",
-		"7d1e38d1-b6b5-4305-1b40-69db25705c80",
-		"c7aa0635-43f3-529c-50c4-baa9fafcab98",
-		"c7c253fe-7d52-fb43-204a-76e6763c3ba8",
-		"d5371f06-cef0-0ac8-9d3e-15061cf16b5a",
-		"e22cfbe8-073b-4aaa-884a-e9cc67d9d24f",
-		"e3cb84ad-1342-2da2-9cd3-68d95fb9d763",
-		"e817ce5b-f008-f3e3-466d-b78f15f82b9f",
-		"ec2089e6-173b-ea20-75ef-4b21ac93ca19",
-		"ef05ac22-1662-1060-34c9-2c6d01147284",
-		"f0096fec-a1ec-3f5a-c07f-76e5a4813968"
-	],
-	"requests": [
-		{
-			"folder": null,
-			"id": "021c37d2-1d9a-db24-d4a7-c6546344bcc8",
-			"name": "Get Tile Email",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": "html",
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/5309/Email",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "0c8e8a8d-61ba-0552-942e-1da851a4b438",
-			"name": "NAR Authentication - GA - FPID",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": "html",
-			"description": "",
-			"headers": "apikey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/MQS/GA/fpid12219",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "13b7f0b0-cc39-5e74-6eff-64ae747699e8",
-			"name": "rDocs-Emphasys",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 2BE367F4-8918-4F40-9273-D24C13DB7457\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/v1/RDE",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "16429186-4c39-3326-f80c-d3da58574b01",
-			"name": "NAR Authentication - AZ",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apikey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/MQS/AZ/141011303",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "220705f8-4e0d-ebd4-4a0f-397a816c3ef0",
-			"name": "Get Tile Emphasys Data",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 2BE367F4-8918-4F40-9273-D24C13DB7457\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/v1/RDE/5349",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "2c8007a8-c05f-54fe-a9fe-066ec08f668d",
-			"name": "GetTileDetail",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/5f33483084bdfe4812c9bc8fa6e8e96b/5875",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "2ccb5ace-962a-6ac1-cdaf-ac34a7b41efc",
-			"name": "GetTileStatuses",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/38ad64cbc996ec0109d932bbb037ca42/5726/Status",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "3e5b0937-51fe-182c-1cc3-30fd02cc65a3",
-			"name": "Update Tile",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\nContent-Type: application/json\n",
-			"method": "PUT",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/6c7e1e924dcb287f7a9af92697923001",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null,
-			"rawModeData": "  {\n    \"ID\": 5391,\n    \"UniqueID\": \"d2a251d2-39ca-4b8b-9044-9158adc1c5b9\",\n    \"Type\": \"\",\n    \"Address1\": \"78 North Main Street\",\n    \"Address2\": \"\",\n    \"City\": \"Santa Ana\",\n    \"State\": \"CA\",\n    \"Zip\": \"96656\",\n    \"MLSNumber\": \"OC1234854\",\n    \"MLSBoardName\": \"\",\n    \"EstimatedClosingDate\": \"5/20/2016\"\n  }"
-		},
-		{
-			"folder": null,
-			"id": "4f04bff6-e395-33fe-ca96-fec6929f8f90",
-			"name": "GetTileFormsCount",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": "html",
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Forms/fcfd08e903ccdf0f07f2e09d3673ee7c/5394/Count",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "5aa65b25-9da2-fcb8-05cc-75dec74bcf08",
-			"name": "Identity Verification",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nContent-Type: application/json\n",
-			"method": "POST",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Identity",
-			"queryParams": [],
-			"headerData": [
-				{
-					"key": "apiKey",
-					"value": "F16F4A4F-DDD6-44F4-87B5-1976B6FA9073",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null,
-			"rawModeData": "{\n    \"userName\": \"zzqaadmin\",\n    \"password\": \"password\",\n    \"siteName\": \"XOME\"\n}"
-		},
-		{
-			"folder": null,
-			"id": "655c367e-917a-5af7-b513-d0785b86bba8",
-			"name": "Get User IKey",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nContent-Type: application/json\n",
-			"method": "POST",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Identity/Ikey",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null,
-			"rawModeData": "{\r\n  \"userName\": \"jngo\",\r\n  \"password\": \"aaaa\",\r\n  \"externalId\": \"\",\r\n  \"siteName\": \"abcrealty\"\r\n}"
-		},
-		{
-			"folder": null,
-			"id": "7d1e38d1-b6b5-4305-1b40-69db25705c80",
-			"name": "Post Tile Status",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\nContent-Type: application/json\n",
-			"method": "PUT",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/38ad64cbc996ec0109d932bbb037ca42/5726/Status",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null,
-			"rawModeData": "  {\n    \"ID\": 5726,\n    \"Status\": \"Waiting for backup offers.\",\n  }"
-		},
-		{
-			"folder": null,
-			"id": "c7aa0635-43f3-529c-50c4-baa9fafcab98",
-			"name": "Delete Tile",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "DELETE",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/6c7e1e924dcb287f7a9af92697923001/5391",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "c7c253fe-7d52-fb43-204a-76e6763c3ba8",
-			"name": "DeleteTileForms",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": "html",
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\nContent-Type: application/json\n",
-			"method": "DELETE",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Forms/fcfd08e903ccdf0f07f2e09d3673ee7c/5394",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null,
-			"rawModeData": "\"2672,1906\""
-		},
-		{
-			"folder": null,
-			"id": "d5371f06-cef0-0ac8-9d3e-15061cf16b5a",
-			"name": "GetTileForms",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Forms/242f054d6d863a7882d9718f5737d8f5/5309",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "e22cfbe8-073b-4aaa-884a-e9cc67d9d24f",
-			"name": "Get Tile Documents",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": "html",
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/docs/231b008fbc12ec033d4b41b40c9b7242/9745",
-			"queryParams": [],
-			"headerData": [
-				{
-					"key": "apiKey",
-					"value": "F16F4A4F-DDD6-44F4-87B5-1976B6FA9073",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "siteKey",
-					"value": "900150983cd24fb0d6963f7d28e17f72",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "e3cb84ad-1342-2da2-9cd3-68d95fb9d763",
-			"name": "GetTileList",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 3cb99eeda6dc8930cde75b396dd2f1e8\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/ef97504a6065d94f22b816515e264169",
-			"queryParams": [],
-			"headerData": [
-				{
-					"key": "apiKey",
-					"value": "F16F4A4F-DDD6-44F4-87B5-1976B6FA9073",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "siteKey",
-					"value": "3cb99eeda6dc8930cde75b396dd2f1e8",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "e817ce5b-f008-f3e3-466d-b78f15f82b9f",
-			"name": "Create Tile",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\nContent-Type: application/json\n",
-			"method": "POST",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/aa2be18f6cac7e666cd80b405eda3892",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null,
-			"rawModeData": "  {\n    \"ID\": 0,\n    \"UniqueID\": \"\",\n    \"Type\": \"\",\n    \"Address1\": \"100 Wall Street\",\n    \"Address2\": \"\",\n    \"City\": \"Irvine\",\n    \"State\": \"CA\",\n    \"Zip\": \"92606\",\n    \"MLSNumber\": \"OC1234321\",\n    \"MLSBoardName\": \"\",\n    \"EstimatedClosingDate\": \"3/17/2017\"\n  }"
-		},
-		{
-			"folder": null,
-			"id": "ec2089e6-173b-ea20-75ef-4b21ac93ca19",
-			"name": "GetTileContacts",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 3cb99eeda6dc8930cde75b396dd2f1e8\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Contact/68de55db8076c0727aff185512452c49/6345",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		},
-		{
-			"folder": null,
-			"id": "ef05ac22-1662-1060-34c9-2c6d01147284",
-			"name": "Add Contact to a Tile",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": null,
-			"description": "",
-			"headers": "Content-Type: application/json\napiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "POST",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Contact/aa2be18f6cac7e666cd80b405eda3892/7210",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null,
-			"rawModeData": "{\r\n  \"ID\": 0,\r\n  \"Type\": \"BUYER\",\r\n  \"Description\": null,\r\n  \"FirstName\": \"charlie\",\r\n  \"LastName\": \"Nettel\",\r\n  \"Company\": null,\r\n  \"Address1\": null,\r\n  \"Address2\": null,\r\n  \"City\": null,\r\n  \"StateCode\": null,\r\n  \"Zip\": null,\r\n  \"isPrimary\": false,\r\n  \"ExternalSystemId\": \"6e8f7b75-2796-408c-bf3b-e9ef9f6d2fc1\",\r\n  \"Email\": [\r\n    {\r\n      \"EmailAddress\": \"none@non.com\",\r\n      \"isPrimary\": true\r\n    }\r\n  ],\r\n  \"Phone\": []\r\n}"
-		},
-		{
-			"folder": null,
-			"id": "f0096fec-a1ec-3f5a-c07f-76e5a4813968",
-			"name": "Get Contact Tile List based on External ID",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": "html",
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/dbdac0b0e1e6cffe7a7251ef0a796140/AB123456789",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		}
-	]
-}''')' failed: ValueError: Invalid control character at: line 43 column 60 (char 1411)</msg>
-<status status="FAIL" endtime="20180305 12:10:18.313" starttime="20180305 12:10:18.311"></status>
+<status status="FAIL" endtime="20180306 16:34:07.184" starttime="20180306 16:34:07.182"></status>
 </kw>
-<status status="FAIL" endtime="20180305 12:10:18.314" starttime="20180305 12:10:18.309"></status>
-</kw>
-<status status="FAIL" endtime="20180305 12:10:18.314" critical="yes" starttime="20180305 12:10:18.309">Evaluating expression 'json.loads('''{
-	"owner": "3168102",
-	"lastUpdatedBy": "3168102",
-	"lastRevision": 2604716083,
-	"team": null,
-	"id": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-	"name": "api.stage.myrdocs.com",
-	"description": "",
-	"folders_order": [],
-	"order": [
-		"021c37d2-1d9a-db24-d4a7-c6546344bcc8",
-		"0c8e8a8d-61ba-0552-942e-1da851a4b438",
-		"13b7f0b0-cc39-5e74-6eff-64ae747699e8",
-		"16429186-4c39-3326-f80c-d3da58574b01",
-		"220705f8-4e0d-ebd4-4a0f-397a816c3ef0",
-		"2c8007a8-c05f-54fe-a9fe-066ec08f668d",
-		"2ccb5ace-962a-6ac1-cdaf-ac34a7b41efc",
-		"3e5b0937-51fe-182c-1cc3-30fd02cc65a3",
-		"4f04bff6-e395-33fe-ca96-fec6929f8f90",
-		"5aa65b25-9da2-fcb8-05cc-75dec74bcf08",
-    [ Message content over the limit has been removed. ]
-			"rawModeData": null,
-			"descriptionFormat": "html",
-			"description": "",
-			"headers": "apiKey: F16F4A4F-DDD6-44F4-87B5-1976B6FA9073\nsiteKey: 900150983cd24fb0d6963f7d28e17f72\n",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "http://api.stage.myrdocs.com/api/V1/Tile/dbdac0b0e1e6cffe7a7251ef0a796140/AB123456789",
-			"queryParams": [],
-			"headerData": [],
-			"pathVariableData": [],
-			"collectionId": "8aac1323-bc32-441b-3292-4a0e2f5c99a6",
-			"auth": null,
-			"currentHelper": null,
-			"helperAttributes": null
-		}
-	]
-}''')' failed: ValueError: Invalid control character at: line 43 column 60 (char 1411)</status>
+<status status="FAIL" endtime="20180306 16:34:07.184" critical="yes" starttime="20180306 16:34:07.181">ValueError: Could not parse '{"userName": "jngo"' as JSON: Expecting object: line 1 column 19 (char 18)</status>
 </test>
 <doc>These are some API Tests</doc>
-<status status="FAIL" endtime="20180305 12:10:18.315" starttime="20180305 12:10:18.072"></status>
+<status status="FAIL" endtime="20180306 16:34:07.185" starttime="20180306 16:34:07.020"></status>
 </suite>
 <statistics>
 <total>
@@ -601,7 +60,7 @@
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="API Tests" pass="0">API Tests</stat>
+<stat fail="1" id="s1" name="Api Tests" pass="0">Api Tests</stat>
 </suite>
 </statistics>
 <errors>

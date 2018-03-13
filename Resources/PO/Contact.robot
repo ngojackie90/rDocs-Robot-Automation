@@ -26,7 +26,7 @@ Select Seller-Side
     Click Element  id=MainContent_rdoSellerSide
 
 Create Primary Client
-    Click Element  xpath=//*[@id="MainContent_ddlContactDesc"]/option[11]
+    Click Element  xpath=//*[@id="MainContent_ddlContactDesc"]/option[11]  #+Contact Btn From Dashboard
     Input Text  id=MainContent_txtFirstName  Jason
     Input Text  id=MainContent_txtLastName  Lee
     Input Text  id=MainContent_txtCompanyName  Jason Corporate
