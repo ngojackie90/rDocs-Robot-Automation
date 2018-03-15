@@ -7,6 +7,7 @@ Resource  ../Resources/PO/Property.robot
 Resource  ../Resources/PO/Documents.robot
 Resource  ../Resources/PO/Esign.robot
 Resource  ../Resources/PO/Checklist.robot
+Resource  ../Resources/PO/DashboardActions.robot
 
 
 #(Test Entire Suite) pybot -d results tests/rdocs.robot
@@ -39,7 +40,7 @@ Add Property Manually
 Create And Edit Buyer Contacts
     [Documentation]  To Create Buyer Contacts On Dashboard And Contact Page
     Common.Create Tile
-    Contact.Select Add Contacts From Blank Tile
+    DashboardActions.Select Add Contacts From Blank Tile
     Contact.Select Buyer Type
     Contact.Create Primary Client
     Contact.Select Add Contacts Button
@@ -53,7 +54,7 @@ Add Property And Buyer Contacts
     Common.Create Tile
     Property.Add Property Button
     Property.Property MLS Search
-    Contact.Select Add Contacts From Blank Tile
+    DashboardActions.Select Add Contacts From Blank Tile
     Contact.Select Buyer Type
     Contact.Create Primary Client
     Contact.Select Add Contacts Button
@@ -65,7 +66,7 @@ Add Property And Buyer Contacts
 Contact Actions
     [Documentation]  To Test All Contact Actions
     Common.Create Tile
-    Contact.Select Add Contacts From Blank Tile
+    DashboardActions.Select Add Contacts From Blank Tile
     Contact.Select Buyer Type
     Contact.Create Primary Client
     Contact.Select Add Contacts Button
@@ -80,7 +81,7 @@ Contact Actions
 Upload Document Test
     [Documentation]  Upload and ReUpload Document
     Common.Create Tile
-    Documents.Select Documents From Dashboard
+    DashboardActions.Select Documents From Dashboard
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Add
@@ -90,7 +91,7 @@ Upload Document Test
 Work With Documents Action
     [Documentation]  Test Work With Documents Functionality Using First Document
     Common.Create Tile
-    Documents.Select Documents From Dashboard
+    DashboardActions.Select Documents From Dashboard
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Add
@@ -111,7 +112,7 @@ Work With Documents Action
 Change Privilege Settings
     [Documentation]  Upload First Document And Change Privilege Settings
     Common.Create Tile
-    Documents.Select Documents From Dashboard
+    DashboardActions.Select Documents From Dashboard
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Close
@@ -122,7 +123,7 @@ Change Privilege Settings
 Extract Documents
     [Documentation]  Upload First Document And Extract Page 1 And 2
     Common.Create Tile
-    Documents.Select Documents From Dashboard
+    DashboardActions.Select Documents From Dashboard
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Close
@@ -144,15 +145,6 @@ Creating Checklist
     Checklist.Delete First Checklist
     Common.Back To Dashboard
 
-
-Dashboard eSign  #Look Back Later
-    Common.Create Tile
-    Sleep  1s
-    Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_lnkQuickEsign_0"]/i
-    Sleep  10s
-    Esign.Select eSign Frame
-    Esign.Step 1 eSign
-    Sleep  3s
 
 
 

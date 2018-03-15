@@ -4,10 +4,6 @@ Resource  ../PO/Esign.robot
 
 
 *** Keywords ***
-Select Documents From Dashboard
-    Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlDocsBadge_0"]/div/span[2]/a
-    Sleep  2s
-
 Select First Documents
     Click Element  id=MainContent_lvDocList_chkSelect_0
     Sleep  1s

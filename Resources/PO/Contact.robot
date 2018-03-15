@@ -2,12 +2,6 @@
 Library  Selenium2Library
 
 *** Keywords ***
-Select Contacts From Tile Group
-    Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_pnlContactsBadge_0"]/div/span[2]/a
-
-Select Add Contacts From Blank Tile
-    Click Element  xpath=//*[@id="MainContent_lstFolders_ctrl0_btnAddClient_0"]
-    Wait Until Element Is Visible  id=MdlContact
 
 Select Add Contacts Button
     Click Element  id=MainContent_btnAddContact

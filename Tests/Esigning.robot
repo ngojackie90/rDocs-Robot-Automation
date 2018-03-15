@@ -6,13 +6,20 @@ Resource  ../Resources/PO/Property.robot
 Resource  ../Resources/PO/Documents.robot
 Resource  ../Resources/PO/Esign.robot
 Resource  ../Resources/PO/Checklist.robot
+Resource  ../Resources/PO/DashboardActions.robot
 
+
+#(Test Entire Suite) pybot -d results tests/Esigning.robot
+#(Test Specific Case) pybot -d results -t "Documents eSign" tests/Esigning.robot
+
+Test Setup  Common.Login to rDocs
+Test Teardown  Common.Logout rDocs
 
 *** Test Cases ***
 Documents eSign
     [Documentation]  Test eSign Without Contacts In Tile
     Common.Create Tile
-    Documents.Select Documents From Dashboard
+    DashboardActions.Select Documents From Dashboard
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Close
@@ -32,7 +39,7 @@ Documents eSign
 Documents eSign Assign Template And Signer
     [Documentation]  Test eSign Without Contacts In Tile, Apply Template and Apple Signer to Signature
     Common.Create Tile
-    Documents.Select Documents From Dashboard
+    DashboardActions.Select Documents From Dashboard
     Documents.Select Add Documents Button
     Documents.Upload Documents By Browser
     Documents.Upload Documents And Close
