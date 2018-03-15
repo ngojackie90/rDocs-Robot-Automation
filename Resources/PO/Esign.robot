@@ -79,6 +79,7 @@ Designate Signers Next
 
 #---- Drag And Drop ----
 Drag Signature
+    Sleep  3s
     Drag And Drop By Offset  xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_Image1"]  300  500
     Sleep  5s
 
@@ -94,6 +95,7 @@ Add Signers
     Input Text  xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_emailAddress"]  jngoqa2@gmail.com
     Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00_ctl02_ctl02_okButton"]
     Sleep  5s
+
 
 #---- eSign Steps -----
 
