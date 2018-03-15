@@ -130,25 +130,7 @@ Extract Documents
     Documents.Select Page 1 And 2
     Documents.Name New Extract Document
 
-Documents eSign
-    [Documentation]  Test eSign Without Contacts In Tile
-    Common.Create Tile
-    Documents.Select Documents From Dashboard
-    Documents.Select Add Documents Button
-    Documents.Upload Documents By Browser
-    Documents.Upload Documents And Close
-    Documents.Esigning Documents
-    Common.Back To Dashboard
 
-Documents eSign Assign Template And Signer
-    [Documentation]  Test eSign Without Contacts In Tile, Apply Template and Apple Signer to Signature
-    Common.Create Tile
-    Documents.Select Documents From Dashboard
-    Documents.Select Add Documents Button
-    Documents.Upload Documents By Browser
-    Documents.Upload Documents And Close
-    Documents.eSigning Documents Apple Template And Signer
-    Common.Back To Dashboard
 
 #------ Checklist ---------
 Creating Checklist

@@ -182,37 +182,6 @@ Emailing Documents
     Click Element  id=MainContent_btnEmailDocs
     Sleep  2s
 
-eSigning Documents
-    Select First Documents
-    Select Dropdown Work With Documents
-    eSign Documents
-    Esign.Select eSign Frame
-    Esign.Step 1 eSign Create Session
-    Esign.Step 2 eSign Add Signers
-    Esign.Step 3 eSign Upload Documents
-    Esign.Step 4 eSign Add Signing Fields
-    Esign.Step 5 eSign Review Templates
-    Esign.Step 6 eSign Confirm
-    Esign.Close eSign Modal
-
-eSigning Documents Apple Template And Signer
-    Select First Documents
-    Select Dropdown Work With Documents
-    eSign Documents
-    Esign.Select eSign Frame
-    Esign.Step 1 eSign Create Session
-    Esign.Step 2 eSign Add Signers
-    Esign.Apply Template Icon
-    Esign.Step 3 Assigning Template
-    Esign.Step 3 Assigning Signer
-    Unselect Frame
-    Esign.Select eSign Frame
-    Esign.Step 3 Next
-    Esign.Step 4 Next
-    Esign.Step 5 eSign Review Templates
-    Esign.Step 6 eSign Confirm
-    Esign.Close eSign Modal
-
 Reviewing Documents
     Select First Documents
     Select Dropdown Work With Documents
