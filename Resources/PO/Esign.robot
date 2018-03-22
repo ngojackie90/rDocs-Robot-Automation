@@ -16,29 +16,30 @@ Include Me As A Signer
 
 Close eSign Modal
     Unselect Frame
-    Click Element  xpath=//*[@id="MainContent_UCEsign_btnXCancel"]
+    Click Element  xpath=//*[@id="MainContent_UCEsign_btnXCancel"]  #Closed eSign Modal
     Sleep  10s
 
 #---- eSign Next Icon -----
 
 Step 1 Next
+    [Documentation]  Selecting Step 1 Next Icon
     Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_nextImg"]
     Sleep  3s
 
 Step 2 Next
-    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img
+    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_sSigners_Signers_grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img  #Step 2 Next Icon
     Sleep  3s
 
 Step 3 Next
-    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img
+    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_sDocuments_sDocument_Grid_ctl00"]/thead/tr[1]/td/table/tbody/tr/td[2]/a[2]/img  #Step 3 Next Icon
     Sleep  3s
 
 Step 4 Next
-    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]
+    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]  #Step 4 Next Icon
     Sleep  3s
 
 Step 5 Next
-    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]
+    Click Element  xpath=//*[@id="ctl00_ContentPlaceHolder1_ctlTagger_nextBtn"]  #Step 5 Next Icon
     Sleep  3s
 
 Step 6 Next

@@ -2,11 +2,13 @@
 Library  Selenium2Library
 
 *** Variables ***
-
+${URL} =  https://abcrealty.stage.myrdocs.com
+${BROWSER} =  firefox
 
 *** Keywords ***
 Login to rDocs
-    Open Browser    https://abcrealty.stage.myrdocs.com  firefox
+    #Open Browser    https://abcrealty.stage.myrdocs.com  firefox
+    Open Browser  ${URL}  ${BROWSER}
     Wait Until Page Contains    Username
     Agent Login
     Click Button  id=btnLogin

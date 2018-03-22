@@ -86,47 +86,47 @@ Upload Documents And Add
 
 #------- Work With Documents ---------
 Select Dropdown Work With Documents
-    Click Element  xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a
+    Click Element  xpath=//*[@id="MainContent_pnlWorkWithDocs"]/div/a  #Work With Documents - Dropdown
     Sleep  2s
 
 Remove Documents
-    Click Element  id=MainContent_btnActionRemove
+    Click Element  id=MainContent_btnActionRemove  #Work With Documents - Remove
     Sleep  2s
 
 Print Documents
-    Click Element  id=MainContent_pnlActionPrint
+    Click Element  id=MainContent_pnlActionPrint  #Work With Documents - Print
     Sleep  2s
 
 Move Documents
-    Click Element  id=MainContent_pnlActionMoveCopy
+    Click Element  id=MainContent_pnlActionMoveCopy  #Work With Documents - Move
     Sleep  2s
 
 Copy Documents
-    Click Element  id=MainContent_pnlActionMoveCopy
+    Click Element  id=MainContent_pnlActionMoveCopy  #Work With Documents - Copy
     Sleep  2s
 
 Fax Documents
-    Click Element  id=MainContent_pnlActionFax
+    Click Element  id=MainContent_pnlActionFax  #Work With Documents - Fax
     Sleep  2s
 
 Email Documents
-    Click Element  id=MainContent_pnlActionEmail
+    Click Element  id=MainContent_pnlActionEmail  #Work With Documents - Email
     Sleep  2s
 
 eSign Documents
-    Click Element  id=MainContent_pnlActionEsign
+    Click Element  id=MainContent_pnlActionEsign  #Work With Documents - eSign
     Sleep  10s
 
 Ready For Review Documents
-    Click Element  id=MainContent_pnlActionReadyForReview
+    Click Element  id=MainContent_pnlActionReadyForReview  #Work With Documents - Ready For Review
     Sleep  2s
 
 Review Documents
-    Click Element  id=MainContent_pnlActionReview
+    Click Element  id=MainContent_pnlActionReview  #Work With Documents - Review
     Sleep  5s
 
 Rename Documents
-    Click Element  id=MainContent_pnlActionRename
+    Click Element  id=MainContent_pnlActionRename  #Work With Documents - Rename
     Sleep  2s
 
 
