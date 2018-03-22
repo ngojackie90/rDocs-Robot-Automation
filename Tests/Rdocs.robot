@@ -135,8 +135,8 @@ Extract Documents
 
 #------ Checklist ---------
 Creating Checklist
+    [Documentation]  Creating a Checklist With Task
     Checklist.Create Checklist
-    #Checklist.Delete First Checklist
     Checklist.Go To First Checklist Task
     Checklist.Add Task To First Checklist
     Checklist.Associate Required Documents To First Task First Checklist
@@ -145,11 +145,16 @@ Creating Checklist
     Checklist.Delete First Checklist
     Common.Back To Dashboard
 
-
-
-
-
-
-
-
-*** Keywords ***
+Verifying Created Checklist
+    [Documentation]  Create a checklist and check if checklist exists in document page
+    Checklist.Create Checklist
+    Checklist.Go To First Checklist Task
+    Checklist.Add Task To First Checklist
+    Checklist.Associate Required Documents To First Task First Checklist
+    Common.Back To Dashboard
+    Common.Create Tile
+    DashboardActions.Select Documents From Dashboard
+    Documents.Add Checklist
+    Dropdown.Select Dropdown
+    Dropdown.Select Checklist
+    Checklist.Delete First Checklist

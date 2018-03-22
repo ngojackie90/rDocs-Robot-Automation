@@ -258,3 +258,7 @@ Name New Extract Document
     Click Element  xpath=//*[@id="MainContent_ucDocumentUtil_lbClose"]
     Sleep  5s
     Wait Until Page Contains  Automation Extract
+
+Add Checklist
+    Sleep  2s
+    Select From List  id=MainContent_ddlChecklistTop  CList Automation
